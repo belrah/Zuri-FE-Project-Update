@@ -6,7 +6,6 @@
 }
 
 body {
-    background-color: whitesmoke;
     font-family: "Manrope" sans-serif;
     text-align: center;
     border: 4px solid #DEEDF0;
@@ -30,7 +29,7 @@ body {
 }
 
 .container-fluid .navbar-brand {
-    color: #fff;
+    color: #000;
     font-size: 1.2em;
     font-weight: bold;
     margin-left: 15px;
@@ -51,15 +50,15 @@ a img {
 }
 
 .navbar .iconify {
-    color: #ffff;
-    content: url('https://api.iconify.design/gg:menu-right-alt.svg?color=white&height=24');
+    color: #0275d8;
+    content: url('https://api.iconify.design/gg:menu-right-alt.svg?color=blue&height=24');
     vertical-align: -0.125em;
     width: 50px;
     height: 50px;
 }
 
 .navbar .fas {
-    color: #ffff;
+    color: #0275d8;
     font-size: larger;
 }
 
@@ -69,15 +68,20 @@ a img {
 }
 
 .nav-item .nav-link {
-    color: #fff;
+    color: #000;
+}
+
+ul {
+    color: #000;
+    font-weight: 600;
 }
 
 .navbar-text {
     margin-right: 40px;
-    color: #fff;
+    color: #0275d8;
     font-size: 0.8em;
     padding: 0px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .collapse .head-navig {
@@ -92,32 +96,164 @@ a img {
 
 /*hero section*/
 
-#hero-image {
-    background-image: radial-gradient(#081A2B, rgba(8, 26, 43, 75%)), url("../img/hero-img.png");
+
+/*testimonial section*/
+
+#testimony {
+    background-color: #FAFCFF;
+}
+
+.testimonial img {
+    width: 8%;
+    margin-left: 1.3rem;
+}
+
+#emma {
+    width: 12%;
+    border: 5px solid #0067CC;
+}
+
+
+/* Patients and Medical assistance section*/
+
+#about_patients_assistance .patients {
+    margin: 100px auto 0;
+}
+
+#about_patients_assistance .assistance {
+    background-image: radial-gradient(#081A2B, rgba(8, 26, 43, 75%)), url("../img/doc-assist.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #DEEDF0;
     background-blend-mode: multiply;
+    border-radius: 25px;
     color: #fff;
-    height: 80vh;
+    height: 70vh;
+    width: 80vw;
+    margin: 100px auto 0;
 }
 
-.title .title-text {
-    width: 28vw;
-    margin: 100px auto 30px;
+.assistance h2 {
+    margin-top: 110px;
+    font-size: 50px;
 }
 
-.title p {
-    width: 38vw;
-    margin: 10px auto 30px;
-    font-size: 14px;
-    line-height: 26px;
+.assistance p {
+    margin: 30px;
+    width: 50%;
 }
 
-.title h1 {
-    font-size: 40px;
+.assistance h6 {
+    width: 50%;
+    margin-top: 35px;
+}
+
+.medical_assistance .ass-btn {
+    border: none;
+    color: #0275d8;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    font-weight: 600;
+    margin-left: -15px !important;
+    margin-top: 8px;
+}
+
+.medical_assistance .hero-ring {
+    margin-top: 70px;
+}
+
+.medical_assistance .hero-text {
+    text-align: left;
+    padding-left: 40px;
+}
+
+
+/*--recent medication issue section---*/
+
+#recent_issues {
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+#recent_issues h2 {
+    text-align: left;
+    margin: 45px 0 20px 110px;
+}
+
+.recent-issue .ass-btn {
+    border: 2px solid #0275d8;
+    color: #0275d8;
+    padding: 3px;
+    border-radius: 10px;
+    width: 150px;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+.recent-issue p {
     font-weight: 500;
+}
+
+#med-btn {
+    border: 1px solid #0275d8;
+    color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    width: 250px;
+    font-weight: 400;
+    background-color: #0275d8;
+}
+
+
+/*--medication issue category section---*/
+
+#category_issues {
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+#category_issues h2 {
+    text-align: left;
+    margin: 45px 0 20px 110px;
+}
+
+.learn a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #0275d8;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.recent-issue .ass-btn {
+    border: 2px solid #0275d8;
+    color: #0275d8;
+    padding: 3px;
+    border-radius: 10px;
+    width: 150px;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+.recent-issue p {
+    font-weight: 500;
+}
+
+#category-btn {
+    border: 1px solid #0275d8;
+    color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    width: 250px;
+    font-weight: 400;
+    background-color: #0275d8;
+}
+
+#guy {
+    width: 12%;
+    border: 5px solid #0067CC;
 }
 
 
@@ -135,6 +271,11 @@ a img {
 .git_details p {
     width: 70%;
     margin-bottom: 20px;
+    padding-left: 10%;
+}
+
+.git_details h3 {
+    padding-left: 10%;
 }
 
 .git_details .fas {
@@ -142,6 +283,7 @@ a img {
     font-size: 30px;
     border-radius: 5px;
     margin-bottom: 6px;
+    padding-left: 10%;
 }
 
 .git-header {
@@ -151,8 +293,9 @@ a img {
 .git_details .env-text {
     color: #000;
     font-size: 15px;
-    margin-left: 8px;
-    font-weight: 200
+    margin-left: 10px;
+    font-weight: 200;
+    padding-left: 10%;
 }
 
 .form-row input {
@@ -164,6 +307,7 @@ a img {
 
 .form-group label {
     margin-bottom: 10px;
+    ;
 }
 
 .form-group textarea {
@@ -183,7 +327,7 @@ a img {
 /* NEWSLETTER section*/
 
 #newsletter {
-    background-color: #F5FAFF;
+    background-color: #DEEDF0;
     height: auto;
     margin: auto;
     margin-top: 40px;
@@ -195,7 +339,11 @@ a img {
 }
 
 .sub .sub_text {
-    padding: 10%;
+    padding: 6% 10% 10% 10%;
+}
+
+.sub .sub_text h2 {
+    font-size: 40px;
 }
 
 .form_box p {
@@ -298,13 +446,6 @@ footer h3 {
 }
 
 @media (max-width: 575.98px) {
-    .title h1 {
-        font-size: 25px;
-    }
-    .title .title-text {
-        width: 28vw;
-        margin: 50px auto 15px;
-    }
     /* footer section*/
     footer a,
     ul {
