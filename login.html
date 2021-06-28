@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap v5 CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/login-signup.css">
+
+    <title>Login :: Medicaid</title>
+</head>
+
+<body>
+    <section class="sign_up">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="medical-issue">
+                        <a href="" class="logo">
+                            Medic<span class="text-primary">aid</span>
+                        </a>
+
+                        <div class="lets-help">
+                            <p class="h3">
+                                Let's help you get <br> sponsors for your <br> Medical Issue
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-8">
+                    <div class="login_account">
+
+                        <div class="lets-help-md">
+                            <p class="h4">
+                                Let's help you get <br> <span class="text-primary">sponsors</span> for your Medical<br>
+                                Issue.
+                            </p>
+                        </div>
+
+                        <p class="h3 mb-4">
+                            Log in to Account
+                        </p>
+
+                        <form method="POST" class="row" id="login_form">
+
+                            <!-- Email Address -->
+                            <div class="form-group col-12">
+                                <label for="email" class="mb-2">Email Address</label>
+                                <input type="email" class="form-control mb-3" name="email-address" id="email-address"
+                                    aria-describedby="helpId" placeholder="Enter Email Address" autocomplete="email">
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group col-12">
+                                <label for="password" class="mb-2">Password</label>
+                                <input type="password" class="form-control mb-4" name="password" id="password"
+                                    aria-describedby="helpId" placeholder="Enter Password"
+                                    autocomplete="current-password">
+                            </div>
+
+                            <!-- Login Button -->
+                            <div class="form-group col-12">
+                                <a type="button" id="login-btn"
+                                    class="btn col-12 btn-block login-btn btn-primary">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap v5 JS and Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Form Validation (Sign Up && Login) -->
+    <!-- <script src="assets/js/form-validation.js"></script> -->
+</body>
+
+</html>
