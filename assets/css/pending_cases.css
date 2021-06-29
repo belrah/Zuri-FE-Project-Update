@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 * {
-    margin: 0%;
-    padding: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 body {
@@ -11,24 +10,31 @@ body {
     text-align: left;
 }
 
+
+/*---left div section---*/
+
 .aid {
     color: #007bff;
 }
 
 .dash_options h3 {
-    margin: 1em;
+    margin: .8em 0 1.5em 0;
 }
 
 .profile .details {
-    display: inline-block
+    display: inline-block;
+}
+
+.profile img {
+    margin-top: -2em;
 }
 
 .details h5 {
-    font-size: 1em;
+    font-size: 14px;
 }
 
 .details p {
-    font-size: 0.8em;
+    font-size: 11px;
 }
 
 .dash_options .profile {
@@ -44,8 +50,8 @@ body {
 }
 
 .learn_more {
-    margin-top: 3em;
-    margin-bottom: 4em;
+    margin-top: 2em;
+    margin-bottom: 2.5em;
     width: auto;
 }
 
@@ -64,74 +70,69 @@ body {
 }
 
 .med_aid .dash_options {
-    min-height: 100vh;
+    width: 20%;
+    height: 100vh;
     background-color: #fff;
     padding: 1em 2em;
 }
 
-.med_aid .dash_main {
-    height: 100vh;
-    background-color: whitesmoke;
-    padding: 1em 2em;
-}
+
+/*-left div--*/
 
 .input-group,
 .form-outline,
 .learn_more {
     position: relative;
+    padding-left: 12px;
 }
 
-.container {
-    display: inline;
-}
-
-.input-group.mb-3 {
+.fa-search {
     position: absolute;
-    width: 30%;
-    top: 2%;
-}
-
-.fa-cog {
-    position: absolute;
-    right: 10%;
-    top: 2%;
+    right: 7%;
+    top: 20%
 }
 
 .fa-bell {
     position: absolute;
-    right: 5%;
-    color: deepskyblue;
-    top: 2%;
+    right: 1%;
+    top: 20%;
 }
 
-.h5 {
-    margin-bottom: 3rem;
+.fa-cog {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+.med_aid .dash_main {
+    width: 80%;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+    padding: 1em 2em 1em 2em;
+}
+
+.dash_main {
     text-align: left;
+}
+
+.medical h4 {
     display: inline;
     justify-content: space-between;
 }
 
-.h5>span {
+.medical span {
     color: #007bff;
 }
 
-.h5>strong {
+.medical strong {
     float: right;
 }
 
-.buttons {
-    justify-content: space-between;
-}
 
-.pageNumber {
-    display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
-    justify-self: flex-end;
-}
+/*--list of cases---*/
 
-.page-link {
-    position: center;
+#cases {
+    padding-left: 12px;
 }
 
 
@@ -150,4 +151,8 @@ body {
 .card-text {
     color: #808080;
     font-size: 13px;
+}
+
+.verify-btn {
+    width: 40%;
 }

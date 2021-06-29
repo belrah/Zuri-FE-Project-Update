@@ -77,21 +77,13 @@ body {
 }
 
 
-/* .med_aid {
-    min-height: 100vh;
-} */
-
-.med_aid .dash_main {
-    width: 80%;
-    min-height: 100vh;
-    background-color: #FAFAFA;
-    padding: 1em 2em 1em 2em;
-}
+/*-left div--*/
 
 .input-group,
 .form-outline,
 .learn_more {
     position: relative;
+    padding-left: 12px;
 }
 
 .fa-search {
@@ -112,42 +104,51 @@ body {
     top: 20%;
 }
 
-.head_and_p a {
-    text-decoration: none;
-    color: #007bff
-}
-
-.texts {
+.med_aid .dash_main {
     width: 80%;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+    padding: 1em 2em 1em 2em;
 }
 
-.inputs {
-    width: 70%;
+.dash_main {
+    text-align: left;
 }
 
-.pat-info p {
-    display: inline-block;
+.medical h4 {
+    display: inline;
+    justify-content: space-between;
+}
+
+.medical span {
+    color: #007bff;
+}
+
+.medical strong {
+    float: right;
 }
 
 
-/*---right div section---*/
+/*--list of cases---*/
 
-.dash_main .text_input {
-    margin-top: 1em;
+#cases {
+    padding-left: 12px;
 }
 
-.text_input h2 {
-    margin-bottom: 1.5em;
+
+/*--cards section--*/
+
+.all-cases-text h5 {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: 500;
 }
 
-.texts .fas {
-    margin: 1.8em 0 0 0.2em;
+.all-cases-text p {
+    color: #2AD195;
 }
 
-.blue_circle {
-    font-size: 20px;
-}
-
-.circle_icon {
-    color: #C4C4C4;
+.card-text {
+    color: #808080;
+    font-size: 13px;
 }
