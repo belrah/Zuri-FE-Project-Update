@@ -1,157 +1,167 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 
 /*
 =========== Sign Up && Login =============
 */
+
 .input-danger {
-  border: 1.5px solid red !important;
+    border: 1.5px solid red !important;
 }
 
 .input-success {
-  border: 1.5px solid green !important;
+    border: 1.5px solid green !important;
 }
 
 a.logo {
-  text-decoration: none;
-  color: #fff !important;
-  font-size: 25px;
-  padding: 60px !important;
-  font-weight: 500;
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 25px;
+    padding: 60px !important;
+    font-weight: 500;
 }
 
 div.medical-issue {
-  position: absolute;
-  width: 700px;
-  height: 650px;
-  left: 0px;
-  top: 0px;
-  padding: 30px;
-  max-width: 550px;
-  margin: auto;
-  background: linear-gradient(0deg, rgba(8, 26, 43, 0.001), rgba(8, 26, 43, 0.3)), url(../img/core-value-desktop.png);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-repeat: no-repeat;
+    position: absolute;
+    width: 700px;
+    height: 625px;
+    left: 0px;
+    top: 0px;
+    padding: 30px;
+    max-width: 550px;
+    margin: auto;
+    background: linear-gradient(0deg, rgba(8, 26, 43, 0.001), rgba(8, 26, 43, 0.3)), url(../img/core-value-desktop.png);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
 }
 
 div.lets-help {
-  margin: auto;
-  max-width: 50vw !important;
-  color: #fff;
-  padding: 60px;
-  margin-top: 60px;
-  font-size: 36px;
-  font-weight: 500;
+    margin: auto;
+    max-width: 50vw !important;
+    color: #fff;
+    padding: 60px;
+    margin-top: 60px;
+    font-size: 36px;
+    font-weight: 500;
 }
 
 div.lets-help-md {
-  color: black;
-  padding-bottom: 30px !important;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 32px;
+    color: black;
+    padding-bottom: 30px !important;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 32px;
 }
+
 @media (min-width: 785px) {
-  div.lets-help-md {
-    display: none !important;
-  }
+    div.lets-help-md {
+        display: none !important;
+    }
 }
 
 div.create_account,
 div.login_account {
-  margin-top: 80px !important;
-  max-width: 400px;
-  margin: auto;
+    margin-top: 80px !important;
+    max-width: 400px;
+    margin: auto;
 }
 
 div.login_account {
-  padding-bottom: 0%;
-  padding-top: 40px;
+    padding-bottom: 0%;
+    padding-top: 40px;
 }
 
 form#sign_up label,
 form#login_form label {
-  font-weight: 400;
+    font-weight: 400;
 }
+
 form#sign_up input,
 form#login_form input {
-  height: 50px;
-  border-radius: 12px;
-  color: #070606 !important;
-  font-size: 15px;
-  border-color: #aca3a3 !important;
+    height: 50px;
+    border-radius: 12px;
+    color: #070606 !important;
+    font-size: 15px;
+    border-color: #aca3a3 !important;
 }
+
 form#sign_up input:focus,
 form#sign_up input:active,
 form#login_form input:focus,
 form#login_form input:active {
-  color: #000 !important;
-  font-size: 16px;
-  border-color: #aca3a3 !important;
+    color: #000 !important;
+    font-size: 16px;
+    border-color: #aca3a3 !important;
 }
+
 form#sign_up a.register-btn,
 form#sign_up a.login-btn,
 form#login_form a.register-btn,
 form#login_form a.login-btn {
-  padding: 12px;
-  border-radius: 12px;
-  font-weight: 500;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 790px) {
-  div.medical-issue {
-    display: none !important;
-  }
-
-  div.col-lg-4.col-md-4 {
-    display: none !important;
-  }
-
-  div.create_account,
-div.login_account {
-    margin: auto !important;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    width: 80vw !important;
-  }
+    div.medical-issue {
+        display: none !important;
+    }
+    div.col-lg-4.col-md-4 {
+        display: none !important;
+    }
+    div.create_account,
+    div.login_account {
+        margin: auto !important;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        width: 80vw !important;
+    }
 }
+
 @media screen and (max-width: 850px) {
-  div.medical-issue {
-    width: 50vw;
-  }
-
-  div.create_account,
-div.login_account {
-    width: 50vw;
-  }
+    div.medical-issue {
+        width: 50vw;
+    }
+    div.create_account,
+    div.login_account {
+        width: 50vw;
+    }
 }
+
 @media screen and (max-width: 1300px) {
-  div.create_account,
-div.login_account {
-    margin-right: 100px;
-  }
+    div.create_account,
+    div.login_account {
+        margin-right: 100px;
+    }
 }
-@media screen and (max-width: 1100px) {
-  div.create_account,
-div.login_account {
-    margin-right: 0px;
-  }
-}
-@media screen and (max-width: 974px) {
-  div.medical-issue {
-    width: 50vw !important;
-  }
 
-  div.create_account,
-div.login_account {
-    margin-right: 0px;
-  }
-}/*# sourceMappingURL=login-signup.css.map */
+@media screen and (max-width: 1100px) {
+    div.create_account,
+    div.login_account {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 974px) {
+    div.medical-issue {
+        width: 50vw !important;
+    }
+    div.create_account,
+    div.login_account {
+        margin-right: 0px;
+    }
+}
+
+
+/*# sourceMappingURL=login-signup.css.map */
