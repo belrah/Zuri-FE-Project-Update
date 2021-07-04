@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+
+body {
+    margin: 4px;
+    line-height: 1.5em;
+    font-size: 110%;
+    font-family: fo'Manrope', sans-serif,Arial, Helvetica, sans-serif;
+    
+  }
+  
+.fab{
+    color:#0275d8;
+    font-size: xx-large;
+}
+  .sidebar {
+      grid-area: sidebar;
+    }
+  
+    .sideview {
+      grid-area: sideview;
+    }
+  
+    .form {
+      grid-area: form;
+    }
+  
+  
+    .wrapper {
+      display: grid;
+      grid-gap: 0px;
+      grid-template-columns: 25%  35% 40%;
+      grid-template-areas:
+                 "sidebar sideview  form"
+                 "sidebar sideview form";
+      background-color: #fff;
+      color: #081a2b;
+    }
+  
+  .sideview {
+    background-color:#f0f7ff;
+    
+    
+  }
+.form{
+    background-color: #f0f7ff;
+    color: #081a2b;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+    
+}
+.sidebar{
+    background-color: white;
+    color: #081a2b;
+}
+ .color{
+     color: #0275d8;
+ }
+
+ .logo{
+     font-size: large;
+     font-weight: 600;
+ }
+ #name{
+     float: right;
+     padding: 2px;
+     font-weight: bold;
+ }
+ .title{
+     font-weight: lighter;
+     color: #9E9E9E;
+ }
+ ul{
+     list-style: none;
+ }
+ li{
+     list-style: none;
+ }
+ img .downpic{
+     
+ }
+ .search input{
+     border-radius: 7px;
+     border: 1px solid gray;
+     height: 30px;
+     width: 300px;
+ }
+ .logos{
+     float: right;
+     padding: 5px;
+ }
+
+ .upload{
+     justify-content: center;
+
+ }
+ button{
+     background-color: #0275d8;
+     color: white;
+     border-radius: 7px;
+     border: 1px solid #0275d8;
+ }
+ 
+ .tform input{
+     border-radius: 1px;
+     border: 1px solid gray;
+     height: 30px;
+     width: 300px;
+ }
+
+ button .next{
+    background-color: #0275d8;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid #0275d8;
+    height: 70px;
+    width: 100px;
+ }
+ button .upload{
+     position: center;
+     height: 30px;
+     width: 200px;
+ }
+ 
+.butn{
+    text-align: center;  
+ 
+}
+.upload{
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.next{
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 10px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.far{
+    color:#0275d8;
+    padding-right: 15px;
+
+}
+ .fas{
+     padding-right: 15px;
+     color: #0275d8;
+ }
+
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: gray;
+    opacity: 1; /* Firefox */
+    font-weight: lighter;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: gray;
+    font-weight: lighter;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: gray;
+    font-weight: lighter;
+  }
+  
+  input[type=text]{
+      border: 1px solid gray;
+      border-radius: 5px;
+      width: 250px;
+  }
+
+  input[type=email]{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 250px;
+}
+
+input[type=number]{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 250px;
+}
+.search_bar .search {
+    width: 300px;
+    position: relative;
+    display: flex;
+  }
+  .search_bar .searchTerm {
+    width: 100%;
+    border: 1px solid gray;
+    border-right: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  .search_bar .searchTerm:focus{
+    color: gray
+  }
+  .search_bar .searchButton {
+    width: 40px;
+    height: 41.5px;
+    border: 1px solid gray ;
+    background: white;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .fa{
+      color:gray;
+  }

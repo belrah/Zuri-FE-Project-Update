@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+div.change_password,
+div.adminstrator-add,
+div.admin_settings {
+  margin-top: 80px !important;
+  max-width: 400px;
+  margin: auto;
+}
+
+div.change_password,
+div.adminstrator-add,
+div.admin_settings {
+  padding-bottom: 0%;
+  padding-top: 40px;
+  padding: 20px;
+}
+div.change_password p.h3,
+div.adminstrator-add p.h3,
+div.admin_settings p.h3 {
+  font-weight: 600;
+  color: #000;
+}
+
+form#change_password_form label,
+form#add_admin_form label {
+  font-weight: 400;
+}
+form#change_password_form input,
+form#add_admin_form input {
+  height: 50px;
+  border-radius: 12px;
+  color: #070606 !important;
+  font-size: 15px;
+  border-color: #aca3a3 !important;
+}
+form#change_password_form input:focus,
+form#change_password_form input:active,
+form#add_admin_form input:focus,
+form#add_admin_form input:active {
+  color: #000 !important;
+  font-size: 16px;
+  border-color: #aca3a3 !important;
+}
+form#change_password_form a.register-btn,
+form#change_password_form a.login-btn,
+form#add_admin_form a.register-btn,
+form#add_admin_form a.login-btn {
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+div.add_administrator {
+  padding-top: 20px;
+}
+div.add_administrator ul.admin-emails {
+  display: flex;
+  padding-left: 0%;
+  flex-wrap: wrap;
+}
+div.add_administrator ul.admin-emails li.admin-email {
+  list-style: none;
+  border: 1px solid #a09494;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+div.add_administrator ul.admin-emails li.admin-email span.email {
+  padding-right: 4px;
+  color: #221f1f;
+}
+div.add_administrator ul.admin-emails li.admin-email svg,
+div.add_administrator ul.admin-emails li.admin-email i {
+  font-size: 14px;
+  transform: rotate(45deg);
+}
+div.add_administrator ul.add-admin-ul {
+  margin-top: 20px;
+  padding-left: 0%;
+}
+div.add_administrator ul.add-admin-ul li.add-admin {
+  display: flex;
+  padding: 6px;
+  cursor: pointer;
+}
+div.add_administrator ul.add-admin-ul li.add-admin span.plus_circle {
+  padding-right: 10px;
+}
+div.add_administrator ul.add-admin-ul li.add-admin span.plus_circle i, div.add_administrator ul.add-admin-ul li.add-admin span.plus_circle svg {
+  font-size: 10px;
+  color: #0d6efd;
+}
+div.add_administrator ul.add-admin-ul li.add-admin p.admin_add {
+  font-weight: 550;
+}
+
+form#add_admin_form div.form-group {
+  margin-bottom: 30px;
+}
+form#add_admin_form div.form-group label {
+  color: #2c2525;
+}
+
+div.settings {
+  margin-top: 40px;
+}
+div.settings p.h5 {
+  color: #000;
+  font-weight: 550;
+}
+div.settings ul.general_settings {
+  padding-left: 0%;
+}
+div.settings ul.general_settings li.setting {
+  background-color: #efedf5;
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  border-radius: 10px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+div.settings ul.general_settings li.setting p.h6 {
+  margin-bottom: 0%;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+div.settings ul.general_settings li.setting a {
+  color: #000;
+}
+div.settings ul.general_settings li.setting i, div.settings ul.general_settings li.setting svg {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 785px) {
+  section.add_administrator {
+    padding-bottom: 60px;
+  }
+
+  ul.admin-emails {
+    flex-direction: column;
+  }
+  ul.admin-emails li.admin-email {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=admin-settings.css.map */

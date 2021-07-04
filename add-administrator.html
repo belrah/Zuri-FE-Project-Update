@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap v5 CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/admin-settings.css">
+
+    <title>Admin Add Administration :: Medicaid</title>
+</head>
+
+<body>
+    <section class="add_administrator">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="adminstrator-add">
+
+                        <p class="h3 mb-4">
+                            Add an Administrator
+                        </p>
+
+                        <div class="add_administrator">
+
+                            <!-- List of Admin Emails -->
+                            <ul class="admin-emails">
+                                <li class="admin-email">
+
+                                    <!-- Email -->
+                                    <span class="email">
+                                        israelvictory87@gmail.com
+                                    </span>
+
+                                    <!-- Remove Button -->
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </li>
+
+                                <li class="admin-email">
+
+                                    <!-- Email -->
+                                    <span class="email">
+                                        nevis@gmail.com
+                                    </span>
+
+                                    <!-- Remove Button -->
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </li>
+
+                                <li class="admin-email">
+
+                                    <!-- Email -->
+                                    <span class="email">
+                                        digitalstade@gmail.com
+                                    </span>
+
+                                    <!-- Remove Button -->
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                            <!-- End of Admin Emails -->
+
+                            <!-- Add Admin -->
+                            <ul class="add-admin-ul">
+                                <li class="add-admin" id="addAdmin">
+                                    <span class="plus_circle">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </span>
+
+                                    <p class="admin_add">
+                                        Add Admin
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <form method="POST" class="row" id="add_admin_form">
+
+                            <!-- Initial Input -->
+                            <div class="form-group col-12">
+                                <label for="email" class="mb-2">Initial Input</label>
+                                <input type="email" class="form-control mb-4" name="initial_input_email"
+                                    id="initial-input-email" aria-describedby="helpId" placeholder="Enter Email Address"
+                                    autocomplete="email">
+                            </div>
+
+                            <!-- Change Password Button -->
+                            <div class="form-group col-12">
+                                <a type="button" id="login-btn" class="btn col-12 btn-block login-btn btn-primary">
+                                    Add Administrator
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap v5 JS and Bootstrap Bundle JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Script to Hide and Display Email Address Section -->
+    <script>
+        const addAdmin = document.getElementById("addAdmin");
+        const addAdminForm = document.getElementById("add_admin_form");
+
+        addAdmin.addEventListener("click", () => {
+            addAdminForm.classList.toggle("d-none");
+        });
+    </script>
+
+    <!-- Form Validation (Sign Up && Login) -->
+    <!-- <script src="assets/js/form-validation.js"></script> -->
+</body>
+
+</html>

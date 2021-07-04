@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope"sans-serif;
+    text-align: left;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+/*---left div section---*/
+
+.aid {
+    color: #007bff;
+}
+
+.dash_options h3 {
+    margin: .8em 0 1.5em 0;
+}
+
+.profile .details {
+    display: inline-block;
+}
+
+.profile img {
+    margin-top: -2em;
+}
+
+.details h5 {
+    font-size: 14px;
+}
+
+.details p {
+    font-size: 11px;
+}
+
+.dash_options .profile {
+    margin-bottom: 2em;
+}
+
+.selections {
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.selections a {
+    text-decoration: none;
+}
+
+.learn_more {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+    width: auto;
+}
+
+.learn_more img {
+    width: auto;
+}
+
+.learn_more .btn {
+    font-size: 8.6px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.switch label {
+    font-size: 0.8em;
+}
+
+.med_aid .dash_options {
+    width: 20%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 1em 2em;
+}
+
+
+/*-right div--*/
+
+.arrow-right {
+    padding-left: 25em;
+}
+
+.input-group,
+.form-outline,
+.learn_more {
+    position: relative;
+    padding-left: 11px;
+}
+
+.fa-search {
+    position: absolute;
+    right: 7%;
+    top: 20%
+}
+
+.fa-bell {
+    position: absolute;
+    right: 1%;
+    top: 20%;
+}
+
+.fa-cog {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+.med_aid .dash_main {
+    width: 80%;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+    padding: 1em 2em 1em 2em;
+}
+
+.dash_main {
+    text-align: left;
+}
+
+.medical p {
+    display: inline;
+    justify-content: space-between;
+}
+
+.medical span {
+    color: #007bff;
+}
+
+.medical strong {
+    float: right;
+}
+
+
+/*--list of cases---*/
+
+#cases {
+    padding-left: 12px;
+}
+
+
+/*--cards section--*/
+
+.notification-item {
+    display: relative;
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 16px;
+}
+
+.notification-item img {
+    width: 56px;
+    height: 56px;
+    margin-left: 20px;
+    margin-top: 12px;
+    background: #CCE6FF;
+    border-radius: 10px;
+    margin-right: 32px;
+}
+
+.notification-item h2 {
+    width: 132px;
+    height: 27px;
+    margin-top: 18px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 170%;
+    align-items: center;
+    letter-spacing: -0.02em;
+}
+
+.notification-item h4 {
+    width: 420px;
+    height: 22px;
+    font-size: 13px;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #928D8D;
+}
+
+.notification-others img {
+    width: 56px;
+    height: 56px;
+    margin-left: 20px;
+    margin-top: 12px;
+    background: #CCE6FF;
+    border-radius: 10px;
+    margin-right: 32px;
+}
+
+.notification-others h2 {
+    width: 132px;
+    height: 27px;
+    margin-top: 18px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 170%;
+    align-items: center;
+    letter-spacing: -0.02em;
+}
+
+.notification-others h4 {
+    width: 420px;
+    height: 22px;
+    margin-top: 4px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 170%;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #928D8D;
+}
+
+.notification-others .arrow {
+    width: 30px;
+    height: 60px;
+    margin-left: 400px;
+    background-color: white;
+}
