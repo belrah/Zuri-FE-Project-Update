@@ -473,16 +473,7 @@ footer h3 {
     text-align: center;
 }
 
-.footer-small .a {
-    color: #FF143D;
-}
-
-.footer-small .a {
-    color: #fff;
-}
-
 @media (max-width: 575.98px) {
-    /* footer section*/
     footer a,
     ul {
         text-align: left;
@@ -493,7 +484,7 @@ footer h3 {
     }
     footer h3 {
         text-align: left;
-        margin-left: 100px;
+        margin-left: 30px;
     }
     .call_to_sponsors p {
         width: 100%;
@@ -501,44 +492,93 @@ footer h3 {
         font-size: 13px;
     }
     .QA {
-        margin-left: 30px;
+        margin-left: 20px;
         font-size: 14px;
     }
     .QA h4 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
     }
-    .assistance h2 {
-        margin-top: 3rem;
-        font-size: 28px;
+    .QA p {
+        font-size: 13px;
     }
     .assistance p {
-        margin: 15px auto;
-        width: 100%;
-        font-size: 14px;
+        width: 10%;
+        height: 30vh;
+        margin: 22px auto !important;
     }
-    /* hero section*/
     .title h1 {
         width: 90vw;
-        font-size: 30px;
+        font-size: 20px;
     }
     .title .title-text {
         margin: 25px auto 15px;
         width: 90vw;
     }
     .title p {
-        width: 90vw;
-        margin: 10px auto 20px;
-        font-size: 16px;
-        line-height: 24px;
+        width: 60vw;
+        margin: 10px auto 10px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .title .span {
+        color: #fff;
+    }
+    .help-text {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .call_to_sponsors p {
+        width: 100%;
+        font-size: 10px;
+    }
+    .assistance h2 {
+        margin-top: 37px !important;
+        font-size: 23px !important;
+    }
+    .testifiers p {
+        font-size: 10px;
+    }
+    .testimonial img {
+        width: 17%;
+        margin-left: .1rem;
+    }
+    #emma {
+        width: 24% !important;
+    }
+    #fa-img h2 {
+        margin-top: 37px !important;
+        font-size: 23px !important;
+    }
+    #fa-img p {
+        width: 100%;
+        height: 23vh;
+        margin: 1px auto .5em !important;
+        font-size: 12px;
+        padding: 1em;
+    }
+    #fa-img .fa-assistance {
+        height: 55vh;
+        width: 85vw;
+        margin: 20px auto;
+    }
+    .title {
+        display: none;
     }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767.98px) {
     footer a,
     ul {
         text-align: left;
         margin-left: -15px;
+    }
+    footer h3 {
+        text-align: left;
+        margin-left: 30px;
+    }
+    footer h2 {
+        margin-left: 30px;
     }
     .assistance h2 {
         margin-top: 5rem;
@@ -576,3 +616,13 @@ footer h3 {
         line-height: 24px;
     }
 }
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 1399.98px) {}
