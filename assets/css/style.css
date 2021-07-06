@@ -473,8 +473,12 @@ footer h3 {
     text-align: center;
 }
 
-.footer-small span {
+.footer-small .a {
     color: #FF143D;
+}
+
+.footer-small .a {
+    color: #fff;
 }
 
 @media (max-width: 575.98px) {

@@ -17,9 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
     <!-- End of Google Font -->
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/sponsor_list.css" />
+    <link rel="stylesheet" href="assets/css/payments.css" />
     <script src="assets/js/sponsor_list.js" defer></script>
-    <title>Sponsor List</title>
+    <title>Failed Success</title>
 </head>
 
 <body>
@@ -43,45 +43,39 @@
                     <nav class="sponsor-list-sidebar__nav">
                         <ul>
                             <li class="nav-item">
-                                <a href="dashboard_overview.html"><i class="far fa-th-large fa-fw"></i
+                                <a href="#"><i class="far fa-th-large fa-fw"></i
                     ><span class="aid"> Dashboard</span></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="sponsor_list.html" class="current-page"
+                  <a href="#" class="current-page"
                     ><i class="fas fa-users fa-fw"></i
                     ><span class="aid"> Sponsors</span></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="med_case_admin.html"
+                  <a href="#"
                     ><i class="fas fa-chart-bar fa-fw"></i
                     ><span class="aid"> Medical Cases</span></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="patient_all_List.html"
+                  <a href="#"
                     ><i class="far fa-users fa-fw"></i
                     ><span class="aid"> Patients</span></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="payments.html"
+                  <a href="#"
                     ><i class="fas fa-user fa-fw"></i
-                    ><span class="aid">Payment</span></a
-                  >
-                </li>
-                   <li class="nav-item">
-                  <a href="reports_dashboard.html"
-                    ><i class="fas fa-user fa-fw"></i
-                    ><span class="aid">Report</span></a
+                    ><span class="aid"> Account</span></a
                   >
                 </li>
               </ul>
             </nav>
 
             <div class="sponsor-list-sidebar__learn-more">
-              <img src="assets/img/trio.png" alt="trio" class="img-fluid" />
+              <img src="assets/img/trio.jpg" alt="trio" class="img-fluid" />
               <button type="button" class="btn btn-primary">
                 Learn more about COVID-19
               </button>
@@ -144,7 +138,7 @@
               "
             >
               <div class="d-flex flex-column">
-                <header class="h4 fw-bold">Sponsors</header>
+                <header class="h4 fw-bold">Payments</header>
                 <nav
                   style="--bs-breadcrumb-divider: '>'"
                   aria-label="breadcrumb"
@@ -152,7 +146,7 @@
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Sponsors
+                                Payments
                             </li>
                             </ol>
                     </nav>
@@ -161,13 +155,23 @@
             </div>
             <div class="all mb-3">
                 <div class="d-flex pb-1">
-                    <div class="fw-bold all__active">All</div>
+                    <div class="fw-bold">
+                        <a href="payments.html" class="text-dark">All</a>
+                    </div>
+
+                    <div class="fw-bold">
+                        <a href="payment_success.html" class="text-dark">Successful Payments</a>
+                    </div>
+                    <div class="fw-bold all__active">
+                        <a href="payment_failed.html" class="text-dark">Failed Payments</a>
+                    </div>
                 </div>
+
                 <div class="divider"></div>
             </div>
             <main class="py-3 py-md-5 px-3 px-md-4">
-                <div class="row justify-content-between align-items-center mb-4">
-                    <header class="col-12 col-md-4 h5 fw-bold">All Sponsors</header>
+                <div class="row justify-content-between align-items-center mb-3">
+                    <header class="col-12 col-md-4 h5 fw-bold">All Payments</header>
                     <div class="col-12 col-md-4">
                         <div class="top-bar__search input-group">
                             <input type="search" class="form-control" placeholder="Search Sponsors" />
@@ -185,11 +189,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <th scope="col">S/N</th>
-                                <th scope="col">FIRST NAME</th>
-                                <th scope="col">LAST NAME</th>
-                                <th scope="col">EMAIL ADDRESS</th>
-                                <th scope="col">TOTAL AMOUNT SPONSORED</th>
-                                <th scope="col">NO OF TIMES SPONSORED</th>
+                                <th scope="col">PAYMENT ID</th>
+                                <th scope="col">SPONSOR'S FULL NAME</th>
+                                <th scope="col">PLATFORM OF PAYMENT</th>
+                                <th scope="col">AMOUNT PAID</th>
+                                <th scope="col">PAYMENT STATUS</th>
                                 <th scope="col"></th>
                             </tr>
                         </thead>
@@ -199,11 +203,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>1</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
+                                <td>4578769780HGGFB</td>
+                                <td>Adeeko Emmanuel</td>
+                                <td>Paystack</td>
                                 <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td class="text-danger">Failed</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -211,11 +215,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>2</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
+                                <td>45768980-0-GNHM</td>
+                                <td>John Doe</td>
+                                <td>Paystack</td>
                                 <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td class="text-danger">Failed</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -223,11 +227,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>3</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
+                                <td>678909U898FGNH</td>
+                                <td>Mary Belrah</td>
+                                <td>Paystack</td>
                                 <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td class="text-danger">Failed</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -235,11 +239,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>4</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
+                                <td>5478679808GFD</td>
+                                <td>Otoki My man</td>
+                                <td>Paystack</td>
                                 <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td class="text-danger">Failed</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -247,11 +251,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>5</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
+                                <td>5478679456GFD</td>
+                                <td>Tyler my Gee</td>
+                                <td>Paystack</td>
                                 <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td class="text-danger">Failed</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -259,11 +263,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>6</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
+                                <td>5478679808ILM</td>
+                                <td>Martina Padimi</td>
+                                <td>Paystack</td>
                                 <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td class="text-danger">Failed</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -271,17 +275,17 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>7</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
+                                <td>5335679808GFD</td>
+                                <td>Haylex Agba</td>
+                                <td>Paystack</td>
                                 <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td class="text-danger">Failed</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="mt-2 mt-md-5 d-flex justify-content-end">
+                <div class="mt-auto mt-md-5 d-flex justify-content-end">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
                             <li class="page-item">
@@ -310,7 +314,7 @@
         </section>
         <!-- End of right section -->
     </div>
-    </div>
+
 </body>
 
 <!-- JavaScript Bundle with Popper -->

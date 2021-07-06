@@ -19,7 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/sponsor_list.css" />
     <script src="assets/js/sponsor_list.js" defer></script>
-    <title>Sponsor List</title>
+    <title>Patient List</title>
 </head>
 
 <body>
@@ -60,7 +60,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="patient_all_List.html"
+                  <a href="patient_all_List.html"class="current-page"
                     ><i class="far fa-users fa-fw"></i
                     ><span class="aid"> Patients</span></a
                   >
@@ -144,7 +144,7 @@
               "
             >
               <div class="d-flex flex-column">
-                <header class="h4 fw-bold">Sponsors</header>
+                <header class="h4 fw-bold">Patients</header>
                 <nav
                   style="--bs-breadcrumb-divider: '>'"
                   aria-label="breadcrumb"
@@ -152,7 +152,7 @@
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                Sponsors
+                                Patients
                             </li>
                             </ol>
                     </nav>
@@ -167,7 +167,7 @@
             </div>
             <main class="py-3 py-md-5 px-3 px-md-4">
                 <div class="row justify-content-between align-items-center mb-4">
-                    <header class="col-12 col-md-4 h5 fw-bold">All Sponsors</header>
+                    <header class="col-12 col-md-4 h5 fw-bold">All Patients</header>
                     <div class="col-12 col-md-4">
                         <div class="top-bar__search input-group">
                             <input type="search" class="form-control" placeholder="Search Sponsors" />
@@ -188,8 +188,10 @@
                                 <th scope="col">FIRST NAME</th>
                                 <th scope="col">LAST NAME</th>
                                 <th scope="col">EMAIL ADDRESS</th>
-                                <th scope="col">TOTAL AMOUNT SPONSORED</th>
-                                <th scope="col">NO OF TIMES SPONSORED</th>
+                                <th scope="col">PERCENTAGE SPONSORED</th>
+                                <a href="">
+                                    <th scope="col">MEDICAL CASES</th>
+                                </a>
                                 <th scope="col"></th>
                             </tr>
                         </thead>
@@ -202,8 +204,8 @@
                                 <td>Adeeko</td>
                                 <td>Emmanuel</td>
                                 <td>emmy4sure.web@gmail.com</td>
-                                <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td>100%</td>
+                                <td>Cancer of Longs</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -211,11 +213,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>2</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
-                                <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>johndoe@gmail.com</td>
+                                <td>30%</td>
+                                <td>Brain Tumor</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -223,11 +225,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>3</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
-                                <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td>sarah</td>
+                                <td>Humpman</td>
+                                <td>humpsarah3@gmail.com</td>
+                                <td>90%</td>
+                                <td>Myopic Astigmatism</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -235,11 +237,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>4</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
-                                <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td>Luka</td>
+                                <td>Jame</td>
+                                <td>james3@gmail.com</td>
+                                <td>50%</td>
+                                <td>short sigthedness</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -247,11 +249,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>5</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
-                                <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td>Sam</td>
+                                <td>Hurt</td>
+                                <td>samhurt@gmail.com</td>
+                                <td>$40%</td>
+                                <td>Brain Damage</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -259,11 +261,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>6</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
-                                <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td>Jane</td>
+                                <td>Johnson</td>
+                                <td>johnsonjane@gmail.com</td>
+                                <td>70%</td>
+                                <td>Heart Transplant</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                             <tr>
@@ -271,11 +273,11 @@
                                     <input class="form-check-input" type="checkbox" />
                                 </th>
                                 <td>7</td>
-                                <td>Adeeko</td>
-                                <td>Emmanuel</td>
-                                <td>emmy4sure.web@gmail.com</td>
-                                <td>$300,000</td>
-                                <td>140 Times</td>
+                                <td>Mike </td>
+                                <td>Dane</td>
+                                <td>mikedane@gmail.com</td>
+                                <td>84%</td>
+                                <td>Liver Disease</td>
                                 <td><i class="far fa-ellipsis-v"></i></td>
                             </tr>
                         </tbody>

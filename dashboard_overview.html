@@ -10,14 +10,12 @@
     <link rel="stylesheet" href="assets/css/dashboard_overview.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Overview</title>
+    <title>All List of Sponsors</title>
 </head>
 
 <body>
@@ -38,11 +36,12 @@
                 <div class="selections">
                     <div><a href=""><i class="fas fa-th-large fa-fw"></i><span class="aid">&nbsp;Dashboard</span></a>
                     </div>
-                    <div><a href=""><i class="fas fa-users fa-fw"></i><span class="aid">&nbsp;Sponsors</span></a></div>
-                    <div><a href=""><i class="fas fa-chart-bar fa-fw"></i><span class="aid">&nbsp;Medical
+                    <div><a href="sponsor_list.html"><i class="fas fa-users fa-fw"></i><span class="aid">&nbsp;Sponsors</span></a></div>
+                    <div><a href="med_case_admin.html"><i class="fas fa-chart-bar fa-fw"></i><span class="aid">&nbsp;Medical
                                 Cases</span></a></div>
-                    <div><a href=""><i class="fas fa-users fa-fw"></i><span class="aid">&nbsp;Patients</span></a></div>
-                    <div><a href=""><i class="fas fa-user fa-fw"></i><span class="aid">&nbsp;Account</span></a></div>
+                    <div><a href="patient_all_List.html"><i class="fas fa-users fa-fw"></i><span class="aid">&nbsp;Patients</span></a></div>
+                    <div><a href="payments.html"><i class="fas fa-user fa-fw"></i><span class="aid">&nbsp;Payment</span></a></div>
+                    <div><a href="reports_dashboard.html"><i class="fas fa-user fa-fw"></i><span class="aid">&nbsp;Report</span></a></div>
                 </div>
 
                 <div class="learn_more">
@@ -60,12 +59,14 @@
             </div>
             <!--- right div--->
             <div class="col-md-6 col-sm-9 col-lg-7 dash_main">
-                <div class="input-group mt-1">
+                <div class="input-group mt-1 pr-5">
                     <div class="form-outline">
                         <input type="search" id="form1" class="form-control" placeholder="Search Dashboard" />
                         <label class="form-label" for="form1"></label>
                         <i class="fas fa-search"></i>
+
                     </div>
+                    </a>
                     <i class="fas fa-cog"></i>
                     <i class="far fa-bell"></i>
                 </div>
@@ -87,12 +88,16 @@
                 </div>
                 <div class="registeredNumber">
                     <div class="sponsorsNumber">
+
                         <div class="imageIcon">
                             <img src="assets/img/icons/gift.png" alt="" srcset="">
                         </div>
                         <div class="numberSponsors">
                             <small id="pop_value">120k</small>
-                            <small>sponsors</small>
+                            <a href="sponsor_list.html" class="text-decoration-none text-dark">
+                                <small>sponsors</small>
+                            </a>
+
                         </div>
                     </div>
                     <div class="patientsNumber">
@@ -101,7 +106,9 @@
                         </div>
                         <div class="numberSponsors">
                             <small id="pop_value">3.2M</small>
-                            <small>Patients</small>
+                            <a href="patient_all_List.html" class="text-decoration-none text-dark">
+                                <small>patients</small>
+                            </a>
                         </div>
                     </div>
                     <div class="medCases">
@@ -110,7 +117,9 @@
                         </div>
                         <div class="numberSponsors">
                             <small id="pop_value">4M</small>
-                            <small>Medical Cases</small>
+                            <a href="med_case_admin.html" class="text-decoration-none text-dark">
+                                <small>Medical Cases</small>
+                            </a>
                         </div>
                     </div>
                     <div class="Reports">
@@ -119,7 +128,10 @@
                         </div>
                         <div class="numberSponsors">
                             <small id="pop_value">3M</small>
-                            <small>Reports</small>
+                            <a href="reports_dashboard.html" class="text-decoration-none text-dark">
+                                <small>Reports</small>
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -183,7 +195,7 @@
         </div>
 
     </div>
-   <script defer src="assets/js/dashboard_overview.js"></script>
+    <script defer src="assets/js/dashboard_overview.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 </body>
