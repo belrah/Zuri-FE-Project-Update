@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
+    <!-- End of Google Font -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reports_allPages.css" />
+    <title>Reports-all page</title>
+</head>
+
+<body>
+    <div class="container-fluid sponsor-list">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="
+            sponsor-list-sidebar
+            col-md-6 col-lg-3
+            d-flex
+            flex-column
+            justify-content-between
+          ">
+                <div class="sponsor-list-sidebar__brand my-1">
+                    <header class="h5 fw-bold">
+                        Medic<span class="sponsor-list-blue">Aid</span>
+                    </header>
+                </div>
+                <div class="sponsor-list-sidebar__profile d-flex align-items-center">
+                    <img src="assets/img/emma.png" alt="single" class="col-3 img-fluid" />
+                    <div class="details col-9 ms-2">
+                        <div class="fw-bolder fs-6">Adeeko Emmanuel</div>
+                        <div><small>Administrator</small></div>
+                    </div>
+                </div>
+                <nav class="sponsor-list-sidebar__nav">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#"><i class="far fa-th-large fa-fw"></i
+                  ><span class="aid"> Dashboard</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="current-page"
+                  ><i class="fas fa-users fa-fw"></i
+                  ><span class="aid"> Sponsors</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#"
+                  ><i class="fas fa-chart-bar fa-fw"></i
+                  ><span class="aid"> Medical Cases</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#"
+                  ><i class="far fa-users fa-fw"></i
+                  ><span class="aid"> Patients</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#"
+                  ><i class="fas fa-user fa-fw"></i
+                  ><span class="aid"> Account</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sponsor-list-sidebar__learn-more">
+            <img src="assets/img/trio.jpg" alt="trio" class="img-fluid" />
+            <button type="button" class="btn btn-primary">
+              Learn more about covid-19
+            </button>
+          </div>
+
+          <div class="switch sponsor-list-blue">
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+              <label class="form-check-label" for="flexSwitchCheckChecked"
+                >Switch to Dark Mode</label
+              >
+            </div>
+          </div>
+        </div>
+        <!-- End of Sidebar-->
+        <!-- Right section -->
+        <section class="right-section col-md-6 col-lg-9 py-4">
+          <div class="right-section-container">
+            <div
+              class="right-section__top-bar d-flex justify-content-between mb-4"
+            >
+              <div class="col-4">
+                <div class="top-bar__search input-group">
+                  <input
+                    type="search"
+                    class="form-control"
+                    placeholder="Search Dashboard"
+                  />
+                  <button class="btn btn-outline-secondary" type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="top-bar__notification">
+                <i class="fas fa-cog ps-3"></i>
+                <i class="far fa-bell ps-3 sponsor-list-blue"></i>
+              </div>
+            </div>
+            <div
+              class="
+                right-section__header
+                d-flex
+                justify-content-between
+                align-items-center
+                mb-2
+              "
+            >
+              <div class="d-flex flex-column">
+                <header class="h4 fw-bold">Reports</header>
+                <nav
+                  style="--bs-breadcrumb-divider: '>'"
+                  aria-label="breadcrumb"
+                >
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <a href="#">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item">Reports</li>
+                        </ol>
+                </nav>
+            </div>
+            <div class="total-sponsor fw-bold fs-3">300K</div>
+        </div>
+        <div class="all mb-3">
+            <div class="nav d-flex" id="cases">
+                <nav class="nav">
+                    <a class="nav-link text-dark font-weight-bold active" aria-current="page" href="#"><strong>All</strong></a
+                  >
+                  <a class="nav-link text-dark font-weight-bold" href="#"
+                    >From Sponsors</a
+                  >
+                  <a class="nav-link text-dark font-weight-bold" href="#"
+                    >From Patients</a
+                  >
+                </nav>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="container-fluid all-cases">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 card-section">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2><strong>Payment from App Not Working</strong></h2>
+                      <p>  Payment from App Not Working.. I tried ir several times
+                        but it didn’t verify m transaction</p>
+                   
+                    <div class="card-footer">
+                      <div class="">
+                        <img src="assets/img/report-profile.png" alt="Sponsors-image" />
+                      </div>
+                      <div class="spons">
+                        <h3><strong>Adeeko Emmanuel</strong></h3>
+                        <h4>Sponsor</h4>
+                      </div>
+                      <div class="date">
+                        <h5>July 1, 2021</h5>
+                        <h6>9:25PM</h6>
+                      </div>
+                    </div>
+                    </div>
+                 
+                  
+                  </div>
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 card-section">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2><strong>Payment from App Not Working</strong></h2>
+                      <p>  Payment from App Not Working.. I tried ir several times
+                        but it didn’t verify m transaction</p>
+                   
+                    <div class="card-footer">
+                      <div class="">
+                        <img src="assets/img/report-profile.png" alt="Sponsors-image"/>
+                      </div>
+                      <div class="spons">
+                        <h3><strong>Adeeko Emmanuel</strong></h3>
+                        <h4>Sponsor</h4>
+                      </div>
+                      <div class="date">
+                        <h5>July 1, 2021</h5>
+                        <h6>9:25PM</h6>
+                      </div>
+                    </div>
+                    </div>
+                 
+                  
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 card-section">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2><strong>Payment from App Not Working</strong></h2>
+                      <p>  Payment from App Not Working.. I tried ir several times
+                        but it didn’t verify m transaction</p>
+                   
+                      <div class="card-footer">
+                      <div class="">
+                        <img src="assets/img/report-profile.png" alt="Sponsors-image"/>
+                      </div>
+                      <div class="spons">
+                        <h3><strong>Adeeko Emmanuel</strong></h3>
+                        <h4>Sponsor</h4>
+                      </div>
+                      <div class="date">
+                        <h5>July 1, 2021</h5>
+                        <h6>9:25PM</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>                
+                              </div>
+                                              <div class="col-lg-4 col-md-4 col-sm-12 card-section">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2><strong>Payment from App Not Working</strong></h2>
+                      <p>  Payment from App Not Working.. I tried ir several times
+                        but it didn’t verify m transaction</p>
+                   
+                    <div class="card-footer">
+                      <div class="">
+                        <img src="assets/img/report-profile.png" alt="Sponsors-image"/>
+                      </div>
+                      <div class="spons">
+                        <h3><strong>Adeeko Emmanuel</strong></h3>
+                        <h4>Sponsor</h4>
+                      </div>
+                      <div class="date">
+                        <h5>July 1, 2021</h5>
+                        <h6>9:25PM</h6>
+                      </div>
+                    </div>
+                    </div>
+                 
+                  
+                  </div>
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 card-section">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2><strong>Payment from App Not Working</strong></h2>
+                      <p>  Payment from App Not Working.. I tried ir several times
+                        but it didn’t verify m transaction</p>
+                   
+                    <div class="card-footer">
+                      <div class="">
+                        <img src="assets/img/report-profile.png" alt="Sponsors-image"/>
+                      </div>
+                      <div class="spons">
+                        <h3><strong>Adeeko Emmanuel</strong></h3>
+                        <h4>Sponsor</h4>
+                      </div>
+                      <div class="date">
+                        <h5>July 1, 2021</h5>
+                        <h6>9:25PM</h6>
+                      </div>
+                    </div>
+                    </div>
+                 
+                  
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 card-section">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2><strong>Payment from App Not Working</strong></h2>
+                      <p>  Payment from App Not Working.. I tried ir several times
+                        but it didn’t verify m transaction</p>
+                   
+                      <div class="card-footer">
+                      <div class="">
+                        <img src="assets/img/report-profile.png" alt="Sponsors-image"/>
+                      </div>
+                      <div class="spons">
+                        <h3><strong>Adeeko Emmanuel</strong></h3>
+                        <h4>Sponsor</h4>
+                      </div>
+                      <div class="date">
+                        <h5>July 1, 2021</h5>
+                        <h6>9:25PM</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>                
+                              </div>
+                                              <div class="col-lg-4 col-md-4 col-sm-12 card-section">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2><strong>Payment from App Not Working</strong></h2>
+                      <p>  Payment from App Not Working.. I tried ir several times
+                        but it didn’t verify m transaction</p>
+                   
+                    <div class="card-footer">
+                      <div class="">
+                        <img src="assets/img/report-profile.png" alt="Sponsors-image"/>
+                      </div>
+                      <div class="spons">
+                        <h3><strong>Adeeko Emmanuel</strong></h3>
+                        <h4>Sponsor</h4>
+                      </div>
+                      <div class="date">
+                        <h5>July 1, 2021</h5>
+                        <h6>9:25PM</h6>
+                      </div>
+                    </div>
+                    </div>
+                 
+                  
+                  </div>
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 card-section">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2><strong>Payment from App Not Working</strong></h2>
+                      <p>  Payment from App Not Working.. I tried ir several times
+                        but it didn’t verify m transaction</p>
+                   
+                    <div class="card-footer">
+                      <div class="">
+                        <img src="assets/img/report-profile.png" alt="Sponsors-image"/>
+                      </div>
+                      <div class="spons">
+                        <h3><strong>Adeeko Emmanuel</strong></h3>
+                        <h4>Sponsor</h4>
+                      </div>
+                      <div class="date">
+                        <h5>July 1, 2021</h5>
+                        <h6>9:25PM</h6>
+                      </div>
+                    </div>
+                    </div>
+                 
+                  
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 card-section">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2><strong>Payment from App Not Working</strong></h2>
+                      <p>  Payment from App Not Working.. I tried ir several times
+                        but it didn’t verify m transaction</p>
+                   
+                      <div class="card-footer">
+                      <div class="">
+                        <img src="assets/img/report-profile.png" alt="Sponsors-image"/>
+                      </div>
+                      <div class="spons">
+                        <h3><strong>Adeeko Emmanuel</strong></h3>
+                        <h4>Sponsor</h4>
+                      </div>
+                      <div class="date">
+                        <h5>July 1, 2021</h5>
+                        <h6>9:25PM</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>                
+                              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of right section -->
+      </div>
+    </div>
+  </body>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+</html>
