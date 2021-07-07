@@ -10,6 +10,11 @@ body {
     text-align: left;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 
 /*---left div section---*/
 
@@ -77,8 +82,9 @@ body {
 }
 
 .container-fluid {
-  background: #FAFAFA;
+    background: #FAFAFA;
 }
+
 
 /*-left div--*/
 
@@ -95,9 +101,13 @@ body {
     right: 7%;
     top: 20%
 }
-.fas, .far {
-  color: #007bff;
+
+.fas,
+.far {
+    color: #007bff;
 }
+
+
 /*.fa-bell {
     position: absolute;
     right: 1%;
@@ -110,6 +120,7 @@ body {
     top: 20%;
 }
 */
+
 .med_aid .dash_main {
     width: 80%;
     min-height: 100vh;
@@ -162,6 +173,7 @@ body {
 .verify-btn {
     width: 40%;
 }
+
 #fname,
 #med_issue,
 #des,
@@ -169,8 +181,8 @@ body {
 #dlo,
 #amtN,
 #btn {
-  width: 500px;
-  border-radius: 5px;
+    width: 500px;
+    border-radius: 5px;
 }
 
 .item .item-content {
@@ -223,22 +235,23 @@ body {
     left: 0
 }
 
-
 @media screen and (max-width:768px) {
-   #form1, .fa-search, .icons {
-    display: none;
-  }
-  .image-upload {
-    width: 100%;
-  }
-  #fname,
-  #med_issue,
-  #des,
-  #noh,
-  #dlo,
-  #amtN,
-  #btn {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+    #form1,
+    .fa-search,
+    .icons {
+        display: none;
+    }
+    .image-upload {
+        width: 100%;
+    }
+    #fname,
+    #med_issue,
+    #des,
+    #noh,
+    #dlo,
+    #amtN,
+    #btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
