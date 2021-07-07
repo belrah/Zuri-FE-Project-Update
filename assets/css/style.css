@@ -93,7 +93,7 @@ a img {
 /*hero section*/
 
 #hero-image {
-    background-image: radial-gradient(#081A2B, rgba(8, 26, 43, 75%)), url("../img/hero-img.png");
+    background-image: radial-gradient(#081A2B, rgba(8, 26, 43, 75%)), url("/hero-img.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: #DEEDF0;
