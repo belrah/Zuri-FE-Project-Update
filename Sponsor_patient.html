@@ -1,408 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Link to Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/sponsor_patient.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/sponsor_patient.css" />
 
     <title>Sponsor Patient</title>
+  </head>
 
-</head>
-
-<body>
-    <header class=".">
-        <section class="bar_title" id="hero-image">
-            <div class="container">
-                <!-- NavBar -->
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-
-                        <Strong>Medic<span class="span">Aid</span></Strong>
-                        </a>
-                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<!-- <span class="navbar-toggler-icon"></span> -->
-                        <!-- <i class="fas fa-bars"></i> -->
-                        <span class="iconify" data-icon="gg:menu-right-alt" data-inline="false"></span>
-					  </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="sponsor.html">Sponsorship</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="medical_issue.html">Medical Issues</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                            <a class="nav-link" href="#"><span
-							class="navbar-text">
-								Seek Medical Assistance </span></a>
-                            <button type="button" class="btn btn-primary">Sponsor A Patient</button>
-                        </div>
-                    </div>
-                </nav>
-
-                <!-- Title -->
-
-            </div>
-        </section>
+  <body>
+    <header class="main-header pb-5 mb-3">
+      <div class="container">
+        <!-- NavBar -->
+        <nav>
+          <a class="nav__brand d-flex align-items-center" href="#"
+            ><img class="col-2" src="assets/img/logo.png" alt="MedicAid logo" />
+            <span class="fw-bold"
+              >Medic<span class="medic-aid-blue">Aid</span></span
+            >
+          </a>
+          <i class="fas fa-bars fs-6 d-md-none" id="menu-toggle"></i>
+          <div class="d-md-flex align-items-center" id="nav-dropdown">
+            <ul class="nav-links d-md-flex me-md-auto">
+              <li>
+                <a class="nav-links__link active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="nav-links__link" href="about.html">About</a>
+              </li>
+              <li>
+                <a class="nav-links__link" href="sponsor.html">Sponsorship</a>
+              </li>
+              <li>
+                <a class="nav-links__link" href="medical_issue.html">Medical</a>
+              </li>
+              <li>
+                <a class="nav-links__link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <a class="" href="sponsor_patient.html">Seek Medical Assistance</a>
+            <a href="sign-up.html">
+              <button type="button" class="btn btn-primary">
+                Sponsor A Patient
+              </button>
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
-
+    <!-- hero section -->
     <!-- hero section -->
 
-    <section class="medical_assistance " id="about_patients_assistance">
-        <div class="row">
-            <!-- Seek Medical Assistance Sub-section -->
-            <div class="make-col assistance mt-auto">
-                <div class="container">
-                    <div class="row row-cols-2">
-                        <div class="make-col hero-text">
-                            <h2>Help Nelson overcome Cancer</h2>
-                            <p>From your desktop, click People & user groups at the top of your left sidebar Click New User Group in the top rightFrom your. </p>
-                            <h6>$4,500 Out Of $10,000</h6>
-                            <!--<div class="btn">
+    <section
+      class="medical_assistance"
+      id="about_patients_assistance"
+      style="margin-top: -2rem"
+    >
+      <div class="row">
+        <!-- Seek Medical Assistance Sub-section -->
+        <div class="make-col assistance mt-auto">
+          <div class="container">
+            <div class="row row-cols-2">
+              <div class="make-col hero-text">
+                <h2>Help Nelson overcome Cancer</h2>
+                <p>
+                  From your desktop, click People & user groups at the top of
+                  your left sidebar Click New User Group in the top rightFrom
+                  your.
+                </p>
+                <h6>$4,500 Out Of $10,000</h6>
+                <!--<div class="btn">
                                 <button type="button" class="ass-btn btn-lg">Sponsor</button>
                             </div>-->
-                        </div>
-                        <div class="make-col hero-ring">
-                            <img src="./assets/img/hero-ring.png" alt="hero-ring" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="make-col hero-ring">
+                <img
+                  src="./assets/img/hero-ring.png"
+                  alt="hero-ring"
+                  class="img-fluid"
+                />
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="box horizontal-scrollable">
-                        <div class="box-content box-row1">
-                            <div class="first-box box-row">
-                            </div>
-                            <div class="second-box box-row">
-                            </div>
-                            <div class="third-box box-row">
-                            </div>
-                            <div class="fourth-box box-row">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="box horizontal-scrollable">
+              <div class="box-content box-row1">
+                <div class="first-box box-row"></div>
+                <div class="second-box box-row"></div>
+                <div class="third-box box-row"></div>
+                <div class="fourth-box box-row"></div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!--Biography-->
     <div class="container">
-        <p class="text-left mb-5"><strong>Nelson's <span class="span">Biography</span></strong></p>
-        <div class="row">
-            <div class="col-lg-3 bio mb-2">
-                <img src="./assets/img/matina.png" alt="" class="img-fluid bio-image">
-            </div>
-            <div class="col-lg-9">
-                <div class="row bio-details">
-                    <div class="col-lg-4 mb-5">
-                        <p><strong>Fullname</strong></p>
-                        <p class="small">Nelson Jamesbond</p>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <p><strong>Age</strong></p>
-                        <p class="small">25yrs</p>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <p><strong>Medical Issue</strong></p>
-                        <p class="small">Cancer of the Lungs</p>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <p><strong>Amount Needed</strong></p>
-                        <p class="small">$10,000</p>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <p><strong>Amount Raised</strong></p>
-                        <p class="small">$4,500</p>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <p><strong>Amount Left</strong></p>
-                        <p class="small">$5,500</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="progress mb-2">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <h5 class="mb-5">$4,500 Out Of $10,000</h5>
-                    </div>
-                </div>
-            </div>
+      <p class="text-left mb-5">
+        <strong>Nelson's <span class="medic-aid-blue">Biography</span></strong>
+      </p>
+      <div class="row">
+        <div class="col-lg-3 bio mb-2">
+          <img
+            src="./assets/img/matina.png"
+            alt=""
+            class="img-fluid bio-image"
+          />
         </div>
-        <!--Sponsor-->
-        <h4 class="text-left mb-5">Sponsor Nelson</h4>
-        <form class="form-container" action="" method="post">
-            <div class="row">
-                <div class="col-lg-12 mb-3">
-                    <div class="text-field">
-                        <div class="text">
-                            <h5 class="text-left">Personal Information</h5>
-                        </div>
-                        <div class="text-line"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <label for="fname" class="move-left">Fullname</label>
-                    <input type="text" name="fname" placeholder="Enter Fullname" class="form-control mb-1">
-                    <label for="" class="move-left">
-               <input type="checkbox" name=""> I choose to stay anonymous
-               </label>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <label for="fname" class="move-left">Email Address</label>
-                    <input type="text" name="fname" placeholder="Enter Email Address" class="form-control mb-1">
-                    <p class="small move-left">E.g johndoe@gmail.com</p>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <label for="fname" class="move-left">Amount ($)</label>
-                    <input type="text" name="fname" placeholder="Enter Amount" class="form-control mb-1">
-                    <p class="small move-left">E.g $500</p>
-                </div>
-                <div class="col-lg-12 mb-3">
-                    <div class="text-field">
-                        <div class="text">
-                            <h5 class="text-left">Account Information</h5>
-                        </div>
-                        <div class="text-line"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <label for="fname" class="move-left">Card Holder's Name</label>
-                    <input type="text" name="fname" placeholder="Enter Card Holder's Name" class="form-control mb-1">
-                    <span class="small move-left">John Doe</span><br>
-                    <label for="" class="move-left">
-               <input type="checkbox" name=""> Save my Card for Next time
-               </label>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <label for="fname" class="move-left">Card Number</label>
-                    <input type="text" name="fname" placeholder="Enter Card Number" class="form-control mb-1">
-                    <p class="small move-left">E.g xxxx - xxxx - xxxx - xxxx</p>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <label for="fname" class="move-left">Card CVV</label>
-                    <input type="text" name="fname" placeholder="Enter Card CVV" class="form-control mb-1">
-                    <p class="small move-left">The 3 numbers behind your card</p>
-                </div>
-                <div class="col-lg-12 mb-3">
-                    <div class="text-field">
-                        <div class="text">
-                            <h5 class="text-left">Extra</h5>
-                        </div>
-                        <div class="text-line"></div>
-                    </div>
-                </div>
-                <div class="col-lg-12 mb-4">
-                    <p class="move-left small">Write a word of encouragement to Nelson (Optional)</p>
-                    <textarea name="comment" rows="8" cols="80" class="form-control textarea" placeholder="Write Here......"></textarea>
-                </div>
-                <div class="col-lg-4">
-                    <a href="index.html">
-                        <input type="submit" name="" value="Sponsor" class="form-control btn btn-primary mb-5">
-                    </a>
-
-                </div>
+        <div class="col-lg-9">
+          <div class="row bio-details">
+            <div class="col-lg-4 mb-5">
+              <p><strong>Fullname</strong></p>
+              <p class="small">Nelson Jamesbond</p>
             </div>
-        </form>
+            <div class="col-lg-4 mb-5">
+              <p><strong>Age</strong></p>
+              <p class="small">25yrs</p>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <p><strong>Medical Issue</strong></p>
+              <p class="small">Cancer of the Lungs</p>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <p><strong>Amount Needed</strong></p>
+              <p class="small">$10,000</p>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <p><strong>Amount Raised</strong></p>
+              <p class="small">$4,500</p>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <p><strong>Amount Left</strong></p>
+              <p class="small">$5,500</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="progress mb-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <h5 class="mb-5">$4,500 Out Of $10,000</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Sponsor-->
+      <h4 class="text-left mb-5">Sponsor Nelson</h4>
+      <form class="form-container" action="" method="post">
+        <div class="row">
+          <div class="col-lg-12 mb-3">
+            <div class="text-field">
+              <div class="text">
+                <h5 class="text-left">Personal Information</h5>
+              </div>
+              <div class="text-line"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <label for="fname" class="move-left">Fullname</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter Fullname"
+              class="form-control mb-1"
+            />
+            <label for="" class="move-left">
+              <input type="checkbox" name="" /> I choose to stay anonymous
+            </label>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <label for="fname" class="move-left">Email Address</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter Email Address"
+              class="form-control mb-1"
+            />
+            <p class="small move-left">E.g johndoe@gmail.com</p>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <label for="fname" class="move-left">Amount ($)</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter Amount"
+              class="form-control mb-1"
+            />
+            <p class="small move-left">E.g $500</p>
+          </div>
+          <div class="col-lg-12 mb-3">
+            <div class="text-field">
+              <div class="text">
+                <h5 class="text-left">Account Information</h5>
+              </div>
+              <div class="text-line"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <label for="fname" class="move-left">Card Holder's Name</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter Card Holder's Name"
+              class="form-control mb-1"
+            />
+            <span class="small move-left">John Doe</span><br />
+            <label for="" class="move-left">
+              <input type="checkbox" name="" /> Save my Card for Next time
+            </label>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <label for="fname" class="move-left">Card Number</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter Card Number"
+              class="form-control mb-1"
+            />
+            <p class="small move-left">E.g xxxx - xxxx - xxxx - xxxx</p>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <label for="fname" class="move-left">Card CVV</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter Card CVV"
+              class="form-control mb-1"
+            />
+            <p class="small move-left">The 3 numbers behind your card</p>
+          </div>
+          <div class="col-lg-12 mb-3">
+            <div class="text-field">
+              <div class="text">
+                <h5 class="text-left">Extra</h5>
+              </div>
+              <div class="text-line"></div>
+            </div>
+          </div>
+          <div class="col-lg-12 mb-4">
+            <p class="move-left small">
+              Write a word of encouragement to Nelson (Optional)
+            </p>
+            <textarea
+              name="comment"
+              rows="8"
+              cols="80"
+              class="form-control textarea"
+              placeholder="Write Here......"
+            ></textarea>
+          </div>
+          <div class="col-lg-4">
+            <a href="index.html">
+              <input
+                type="submit"
+                name=""
+                value="Sponsor"
+                class="form-control btn btn-primary mb-5"
+              />
+            </a>
+          </div>
+        </div>
+      </form>
     </div>
     <!-- patners Section -->
     <section id="brands mb-5">
-        <div class="container partner-brands pb-2 ">
-            <div class="row brand-images ">
-                <img src="./assets/img/oc.png " alt="police-logo " class="img-fluid" id="partnerss">
-                <img src="/assets/img/health-center-patners.png " alt="Zuri team " class="img-fluid mt-2 " id="partner">
-                <img src="./assets/img/health-pstners-plans.png " alt="slack " class="img-fluid mt-4 " id="partners">
-                <img src="/assets/img/Allways.png " alt="Zuri team " class="img-fluid mt-2 " id="partner">
-                <img src="./assets/img/healthwise.png " alt="slack " class="img-fluid mt-2 " id="partners">
-                <img src="./assets/img/oc.png " alt="police-logo " class="img-fluid " id="partnerss">
-            </div>
+      <div class="container partner-brands pb-2">
+        <div class="row brand-images">
+          <img
+            src="./assets/img/oc.png "
+            alt="police-logo "
+            class="img-fluid"
+            id="partnerss"
+          />
+          <img
+            src="/assets/img/health-center-patners.png "
+            alt="Zuri team "
+            class="img-fluid mt-2"
+            id="partner"
+          />
+          <img
+            src="./assets/img/health-pstners-plans.png "
+            alt="slack "
+            class="img-fluid mt-4"
+            id="partners"
+          />
+          <img
+            src="/assets/img/Allways.png "
+            alt="Zuri team "
+            class="img-fluid mt-2"
+            id="partner"
+          />
+          <img
+            src="./assets/img/healthwise.png "
+            alt="slack "
+            class="img-fluid mt-2"
+            id="partners"
+          />
+          <img
+            src="./assets/img/oc.png "
+            alt="police-logo "
+            class="img-fluid"
+            id="partnerss"
+          />
         </div>
+      </div>
     </section>
 
     <!--Advertise-->
     <section class="medical_assistance mb-5" id="about_patients_assistance">
-        <div class="row">
-            <!-- Seek Medical Assistance Sub-section -->
-            <div class="make-col assistance mt-auto">
-                <div class="container">
-                    <div class="row row-cols-2">
-                        <div class="make-col hero-text">
-                            <h2>You can always help anytime, anyday, anywhere.</h2>
-                            <p>Download the MedicAid Sponsor App and keep saving lifes even on the go </p>
-                            <div class="btn">
-                                <a href="https://drive.google.com/file/d/1G5yqy7yh1TPCsCJCsSuoVJEnkFas6qCr/view?usp=drivesdk">
-                                    <button type="button" class="ass-btn btn btn-lg btn-primary"><span class="fab fa-google-play"></span> Download</button>
-                                </a>
+      <div class="row">
+        <!-- Seek Medical Assistance Sub-section -->
+        <div class="make-col assistance mt-auto">
+          <div class="container">
+            <div class="row row-cols-2">
+              <div class="make-col hero-text">
+                <h2>You can always help anytime, anyday, anywhere.</h2>
+                <p>
+                  Download the MedicAid Sponsor App and keep saving lifes even
+                  on the go
+                </p>
+                <div class="btn">
+                  <a
+                    href="https://drive.google.com/file/d/1G5yqy7yh1TPCsCJCsSuoVJEnkFas6qCr/view?usp=drivesdk"
+                  >
+                    <button
+                      type="button"
+                      class="ass-btn btn btn-lg btn-primary"
+                    >
+                      <span class="fab fa-google-play"></span> Download
+                    </button>
+                  </a>
 
-                                <a href="https://drive.google.com/file/d/1G5yqy7yh1TPCsCJCsSuoVJEnkFas6qCr/view?usp=drivesdk">
-                                    <button type="button" class="ass-btn btn btn-lg btn-dark"><span class="fab fa-apple"></span> Download</button>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="make-col hero-ring">
-                            <img src="./assets/img/hero-ring.png" alt="hero-ring" class="img-fluid">
-                        </div>
-                    </div>
+                  <a
+                    href="https://drive.google.com/file/d/1G5yqy7yh1TPCsCJCsSuoVJEnkFas6qCr/view?usp=drivesdk"
+                  >
+                    <button type="button" class="ass-btn btn btn-lg btn-dark">
+                      <span class="fab fa-apple"></span> Download
+                    </button>
+                  </a>
                 </div>
+              </div>
+              <div class="make-col hero-ring">
+                <img
+                  src="./assets/img/hero-ring.png"
+                  alt="hero-ring"
+                  class="img-fluid"
+                />
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- newsletter Section -->
-    <section class="subscribe mb-auto " id="newsletter">
-        <div class="container">
-            <div class="row sub">
-                <div class="col-lg-6 sub_text ">
-                    <h2>Subscribe <span class="aid"><span class="span ">to our Newsletter</span>
-                    </h2>
-                    <p>Subscribe to our newsletter to get updates about the platform</p>
+    <section class="subscribe mb-auto" id="newsletter">
+      <div class="container">
+        <div class="row sub">
+          <div class="col-lg-6 sub_text">
+            <h2>
+              Subscribe
+              <span class="aid"
+                ><span class="medic-aid-blue">to our Newsletter</span></span
+              >
+            </h2>
+            <p>Subscribe to our newsletter to get updates about the platform</p>
+          </div>
+          <div class="col-lg-6 form_box">
+            <form>
+              <div class="form-row">
+                <div class="col">
+                  <p>Firstname</p>
+                  <input
+                    type="text "
+                    class="form-control"
+                    placeholder="Enter fullname "
+                  />
                 </div>
-                <div class="col-lg-6 form_box ">
-                    <form>
-                        <div class="form-row ">
-                            <div class="col ">
-                                <p>Firstname</p>
-                                <input type="text " class="form-control " placeholder="Enter fullname ">
-                            </div>
-                            <div class="form-group ">
-                                <label for="exampleFormControlInput1 ">Email Address</label>
-                                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="Enter Email Address ">
-                            </div>
-                            <button class="btn btn-primary " type="button ">Subscribe!</button>
-                        </div>
-                    </form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1 ">Email Address</label>
+                  <input
+                    type="email "
+                    class="form-control"
+                    id="exampleFormControlInput1 "
+                    placeholder="Enter Email Address "
+                  />
                 </div>
-            </div>
+                <button class="btn btn-primary" type="button ">
+                  Subscribe!
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- Seek Medical Assistance + Sponsor a patient Section -->
 
-    <section class="ass_spons pb-3 " id="ass_patient ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-sm-12 col-md-12 col-lg-6 ">
-
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 med_help ">
-                    <a class="" href="#">Ask for medical help</a>
-                    <button class="btn btn-primary " type="button ">Sponsor A Patient</button>
-                </div>
-            </div>
+    <section class="ass_spons pb-3" id="ass_patient ">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6"></div>
+          <div class="col-sm-6 col-md-6 col-lg-6 med_help">
+            <a class="" href="#">Ask for medical help</a>
+            <button class="btn btn-primary" type="button ">
+              Sponsor A Patient
+            </button>
+          </div>
         </div>
+      </div>
     </section>
-
-
 
     <!-- footer section -->
 
-    <footer class="pt-5 " id="footerbg ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-lg-3 mb-auto">
-                    <a class="navbar-brand " href="# "><img src="assets/img/logo1.png " class="img-fluid " alt="logo ">
-                        <h2 class=" ">Medi<span class="span ">Aid</span></h2>
-                    </a>
-                </div>
-                <div class="col-lg-3 ">
-                    <h3> Quick Links</h3>
-                    <ul class="pt-2 ">
-                        <li>
-                            <a href=" ">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html ">About</a>
-                        </li>
-                        <li>
-                            <a href="sponsor.html ">Sponsorship</a>
-                        </li>
-                        <li>
-                            <a href=" ">Medical </a>
-                        </li>
-                        <li>
-                            <a href="contact.html ">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 ">
-                    <h3> Quick Links</h3>
-                    <ul class="pt-2 ">
-                        <li>
-                            <a href="index.html ">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html ">About</a>
-                        </li>
-                        <li>
-                            <a href="sponsorship.html ">Sponsorship</a>
-                        </li>
-                        <li>
-                            <a href="medical_issue.html">Medical</a>
-                        </li>
-                        <li>
-                            <a href="contact.html ">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Social Links</h3>
-                    <ul class="pt-2">
-                        <li>
-                            <a href=" ">Twitter</a>
-                        </li>
-                        <li>
-                            <a href=" ">Facebook</a>
-                        </li>
-                        <li>
-                            <a href=" ">Intergram</a>
-                        </li>
-                        <li>
-                            <a href=" ">Linkedin</a>
-                        </li>
-                        <li>
-                            <a href=" ">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <footer class="pt-5" id="footerbg ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-auto">
+            <a class="navbar-brand" href="# "
+              ><img src="assets/img/logo1.png " class="img-fluid" alt="logo " />
+              <h2 class="">Medi<span class="medic-aid-blue">Aid</span></h2>
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <h3>Quick Links</h3>
+            <ul class="pt-2">
+              <li>
+                <a href=" ">Home</a>
+              </li>
+              <li>
+                <a href="about.html ">About</a>
+              </li>
+              <li>
+                <a href="sponsor.html ">Sponsorship</a>
+              </li>
+              <li>
+                <a href=" ">Medical </a>
+              </li>
+              <li>
+                <a href="contact.html ">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h3>Quick Links</h3>
+            <ul class="pt-2">
+              <li>
+                <a href="index.html ">Home</a>
+              </li>
+              <li>
+                <a href="about.html ">About</a>
+              </li>
+              <li>
+                <a href="sponsorship.html ">Sponsorship</a>
+              </li>
+              <li>
+                <a href="medical_issue.html">Medical</a>
+              </li>
+              <li>
+                <a href="contact.html ">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h3>Social Links</h3>
+            <ul class="pt-2">
+              <li>
+                <a href=" ">Twitter</a>
+              </li>
+              <li>
+                <a href=" ">Facebook</a>
+              </li>
+              <li>
+                <a href=" ">Instagram</a>
+              </li>
+              <li>
+                <a href=" ">LinkedIn</a>
+              </li>
+              <li>
+                <a href=" ">Blog</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-small ">
-            <p>Copyright &copy; 2021 || <span>PJT-50</span></p>
-        </div>
+      </div>
+      <div class="footer-small">
+        <p>Copyright &copy; 2021 || <span>PJT-50</span></p>
+      </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 "
+      crossorigin="anonymous "
+    ></script>
+    <script src="assets/js/menu-toggle.js"></script>
+  </body>
 </html>
