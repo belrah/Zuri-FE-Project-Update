@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+<<<<<<< HEAD
 *{
+=======
+* {
+>>>>>>> 43d7846345062fd6cc267a423f407194da6e7be4
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
 }
+<<<<<<< HEAD
   body {
       font-family: "Manrope" sans-serif;
       text-align: left;
@@ -86,20 +91,116 @@
 
 .input-group.mb-3 {
     position:absolute;
+=======
+
+body {
+    font-family: "Manrope" sans-serif;
+    text-align: left;
+}
+
+.aid {
+    color: #007bff;
+}
+
+.dash_options h3 {
+    margin: 1em;
+}
+
+.profile .details {
+    display: inline-block
+}
+
+.details h5 {
+    font-size: 1em;
+}
+
+.details p {
+    font-size: 0.8em;
+}
+
+.dash_options .profile {
+    margin-bottom: 2em;
+}
+
+.selections .fas {
+    margin-bottom: 1em;
+}
+
+.selections a {
+    text-decoration: none;
+}
+
+.learn_more {
+    margin-top: 3em;
+    margin-bottom: 4em;
+    width: auto;
+}
+
+.learn_more img {
+    width: auto;
+}
+
+.learn_more .btn {
+    font-size: 8.6px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.switch label {
+    font-size: 0.8em;
+}
+
+.med_aid .dash_options {
+    /* width: 20%; */
+    height: 100vh;
+    background-color: #fff;
+    padding: 1em 2em;
+}
+
+.med_aid .dash_main {
+    /* width: 80%; */
+    height: 100vh;
+    background-color: whitesmoke;
+    padding: 1em 2em;
+}
+
+.input-group,
+.form-outline,
+.learn_more {
+    position: relative;
+}
+
+.container {
+    display: inline;
+}
+
+.input-group.mb-3 {
+    position: absolute;
+>>>>>>> 43d7846345062fd6cc267a423f407194da6e7be4
     width: 30%;
     top: 2%;
 }
 
 .fa-cog {
+<<<<<<< HEAD
     position:absolute;
+=======
+    position: absolute;
+>>>>>>> 43d7846345062fd6cc267a423f407194da6e7be4
     right: 10%;
     top: 2%;
 }
 
 .fa-bell {
+<<<<<<< HEAD
     position:absolute;
     right: 5% ;
     color:deepskyblue;
+=======
+    position: absolute;
+    right: 5%;
+    color: deepskyblue;
+>>>>>>> 43d7846345062fd6cc267a423f407194da6e7be4
     top: 2%;
 }
 
@@ -110,9 +211,15 @@
 }
 
 .h5 {
+<<<<<<< HEAD
     margin-bottom:3rem;
     text-align:left;
     display:inline;
+=======
+    margin-bottom: 3rem;
+    text-align: left;
+    display: inline;
+>>>>>>> 43d7846345062fd6cc267a423f407194da6e7be4
     justify-content: space-between;
 }
 
@@ -122,10 +229,17 @@
 
 .h5>strong {
     float: right;
+<<<<<<< HEAD
  }  
 
 .d-grid:hover {
     color:dodgerblue;
+=======
+}
+
+.d-grid:hover {
+    color: dodgerblue;
+>>>>>>> 43d7846345062fd6cc267a423f407194da6e7be4
 }
 
 .buttons {
@@ -133,11 +247,19 @@
 }
 
 .nav.d-flex {
+<<<<<<< HEAD
    margin-bottom: 1rem;
 }
 
 .nav.d-flex:hover{
     color:inherit;   
+=======
+    margin-bottom: 1rem;
+}
+
+.nav.d-flex:hover {
+    color: inherit;
+>>>>>>> 43d7846345062fd6cc267a423f407194da6e7be4
 }
 
 .pageNumber {
@@ -148,7 +270,12 @@
 }
 
 .page-link {
+<<<<<<< HEAD
     position:center;
 }
 
 
+=======
+    position: center;
+}
+>>>>>>> 43d7846345062fd6cc267a423f407194da6e7be4
