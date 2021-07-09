@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Patients sign in</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- font awesome CDN-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <!-- google fon link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+
+        <script src="main.js"></script>
+
+    </head> 
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="logo">
+                    <p>Medic<span class="color">Aid</span></p>
+                </div>
+                <br>
+                <div class="img">
+                    <img src="picon.png" alt="picon" height="100px" width="100px" /> 
+                    <span>  <p id="name"> Adeeko Emaanuel
+                        <br> <em class="title"> Administrator.</em></p></span>
+                   
+                </div>
+                <div>
+                    <ul>
+                        <li class="active"> <i class="fas fa-th-large"></i>Dashboard</li><br>
+                        <li> <i class="fas fa-users"></i>Sponsors</li><br>
+                        <li> <i class="far fa-chart-bar"></i>Medical Cases</li><br>
+                        <li> <i class="fas fa-users"></i>Patients</li><br>
+                        <li><i class="far fa-user"></i>Account</li>
+                    </ul>
+                </div>
+                <br>
+                <img class="downpic" src="downpic.png" alt="covid free pic">
+                <p class="color"> Switch to Dark Mode</p>
+                
+    
+            </div>
+            <div class="sideview">
+                <br>
+                <div class="search_bar">
+                    <div class="search">
+                       <input type="text" class="searchTerm"  id="searchbar" placeholder="Search Dashboard ">
+                       <button type="submit" class="searchButton">
+                         <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                 </div>
+                <div>
+                    <h2><strong>Dashboard</strong></h2>
+                    <h3>Dashboard<span class="color"> > Add a patient</span></h3>
+                    <br>
+                    <br>
+                    <h2><b><p>Register a <span class="color">Patient</span> for <br> <br> Sponsorship</p></b></h2>
+                    <br>
+    
+                    <h3> <i class="far fa-circle"></i> Patient's Personal Information</h3>
+                    <br>
+                    <br>
+                    <p class="light"><i class="fas fa-circle"></i> Medical Case Information</p>
+                    <br>
+                    <br>
+                    <p class="light"> <i class="fas fa-circle"></i>Medical Case Information</p>
+                </div>
+    
+            </div>
+            <div class="form">
+                <div class="logos"> <i class="fas fa-cog"></i> <span><i class="far fa-bell"></i></span></div>
+                <br> <br> <div class="butn">
+                    <button class="upload"> Upload In Batch</button>
+                </div>
+                <br><br>
+                <div class="tform">
+                    <p> Title of Plea</p>
+                    <div class="search"><input type="text" maxlength="30" id="title_plea" placeholder="|" required></div>
+                    <p>Patient's Email Address</p>
+                    <input type="email" maxlength="30" id="email"placeholder="Enter Patient's Email Address" required>
+                    <p>Patient's Age</p>
+                    <input type="number" maxlength="3" id="age" placeholder="Enter Patient's Age" required>
+                    <br> <br>
+                    <button class="next"> Next</button>
+    
+                </div>
+    
+            </div>
+        </div>
+        
+    </body>
+</html>

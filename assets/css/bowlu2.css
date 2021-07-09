@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Manrope" sans-serif;
+    text-align: left;
+}
+
+.aid {
+    color: #007bff;
+}
+
+.dash_options h3 {
+    margin: 1em;
+}
+
+.profile .details {
+    display: inline-block
+}
+
+.details h5 {
+    font-size: 1em;
+}
+
+.details p {
+    font-size: 0.8em;
+}
+
+.dash_options .profile {
+    margin-bottom: 2em;
+}
+
+.selections .fas {
+    margin-bottom: 1em;
+}
+
+.selections a {
+    text-decoration: none;
+}
+
+.learn_more {
+    margin-top: 3em;
+    margin-bottom: 4em;
+    width: auto;
+}
+
+.learn_more img {
+    width: auto;
+}
+
+.learn_more .btn {
+    font-size: 8.6px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.switch label {
+    font-size: 0.8em;
+}
+
+.med_aid .dash_options {
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 1em 2em;
+}
+
+.med_aid .dash_main {
+    height: 100vh;
+    background-color: whitesmoke;
+    padding: 1em 2em;
+}
+
+.input-group,
+.form-outline,
+.learn_more {
+    position: relative;
+}
+
+.container {
+    display: inline;
+}
+
+.input-group.mb-3 {
+    position: absolute;
+    width: 30%;
+    top: 2%;
+}
+
+.fa-cog {
+    position: absolute;
+    right: 10%;
+    top: 2%;
+}
+
+.fa-bell {
+    position: absolute;
+    right: 5%;
+    color: deepskyblue;
+    top: 2%;
+}
+
+.h5 {
+    margin-bottom: 3rem;
+    text-align: left;
+    display: inline;
+    justify-content: space-between;
+}
+
+.h5>span {
+    color: #007bff;
+}
+
+.h5>strong {
+    float: right;
+}
+
+.buttons {
+    justify-content: space-between;
+}
+
+.pageNumber {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.page-link {
+    position: center;
+}
+
+
+/*--cards section--*/
+
+.all-cases-text h5 {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.all-cases-text p {
+    color: #2AD195;
+}
+
+.card-text {
+    color: #808080;
+    font-size: 13px;
+}
