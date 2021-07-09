@@ -141,10 +141,7 @@ p.hero__subtitle {
 /* Patients and Medical assistance section*/
 #about_patients_assistance .row {
   background-color: #081a2b;
-  background-image: linear-gradient(
-      rgba(169, 179, 189, 0.9),
-      rgba(169, 179, 189, 0.1)
-    ),
+  background-image: linear-gradient(rgb(8, 26, 43, 0.6), rgb(8, 26, 43, 0.6)),
     url("../img/doc-assist.png");
   background-position: center;
   background-repeat: no-repeat;
