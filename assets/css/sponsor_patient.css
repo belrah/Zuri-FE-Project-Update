@@ -1,201 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+  --primary-color: #0275d8;
 }
 
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after,
+li,
+ul,
+p {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style-type: none;
+}
 body {
-    font-family: "Manrope" sans-serif;
-    text-align: center;
-    border: 4px solid #DEEDF0;
-    font-size: 16px;
+  /* background-color: #f0f7ff; */
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
 }
 
-html,
-body {
-    overflow-x: hidden;
+.medic-aid-blue {
+  color: var(--primary-color);
+}
+.btn {
+  font-size: 0.8rem;
+}
+/* Main header section */
+.main-header {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(23, 93, 158, 0.2),
+    rgba(8, 26, 43, 0.05)
+  );
+  padding-top: 1.5rem;
+  box-shadow: 0 10px 15px rgba(8, 26, 43, 0.05);
+}
+.main-header .container {
+  padding: 0 2rem;
 }
 
-.span {
-    color: #0275d8;
+/* Navbar section */
+.main-header nav {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
 }
-
-
-/*navbar section*/
-
-.container .navbar {
-    padding-top: 30px;
-}
-
-.container-fluid .navbar-brand {
+@media screen and (min-width: 768px) {
+  .main-header nav {
     color: #000;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-left: 15px;
+  }
+}
+.main-header nav .nav__brand {
+  font-size: 1rem;
+  color: #000;
+}
+.main-header nav .nav__brand > span {
+  margin-left: 0.3rem;
+}
+.main-header nav > div {
+  display: none;
+}
+.main-header nav .fa-bars {
+  color: #000;
+}
+.main-header nav > div.nav-active {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(8, 26, 43, 0.95);
+  left: 0;
+  right: 0;
+  top: 4rem;
+  padding: 1rem 0 2rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.main-header nav > div.nav-active > a {
+  margin: 0.5rem 0;
+}
+.main-header nav > div.nav-active .nav-links {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+.main-header nav > div.nav-active .nav-links__link {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
 }
 
-strong {
-    font-size: 22px;
+.main-header .nav-links .nav-links__link {
+  display: inline-block;
+  position: relative;
+  padding: 0.3rem 0rem;
+  margin-right: 1rem;
 }
-
-a img {
-    width: 50%;
-    height: 50%;
+.main-header nav a:nth-child(3) {
+  margin: 0 2rem;
 }
-
-.navbar-nav {
-    margin-left: 90px;
-    font-size: 0.8em;
-}
-
-.navbar .iconify {
-    color: #0275d8;
-    content: url('https://api.iconify.design/gg:menu-right-alt.svg?color=blue&height=24');
-    vertical-align: -0.125em;
-    width: 50px;
-    height: 50px;
-}
-
-.navbar .fas {
-    color: #0275d8;
-    font-size: larger;
-}
-
-.nav-item {
-    margin-right: 10px;
-    font-size: 16px;
-}
-
-.nav-item .nav-link {
-    color: #000;
-}
-
-ul {
-    color: #000;
-    font-weight: 600;
-}
-
-.navbar-text {
-    margin-right: 40px;
-    color: #0275d8;
-    font-size: 0.8em;
-    padding: 0px;
-    font-size: 16px;
-}
-
-.collapse .head-navig {
-    background: #0275d8;
-    font-size: 0.8em;
-    text-align: center;
-    border-radius: 8px;
-    margin-right: 30px;
-    padding: 0.5em 1.5em;
-}
-/*hero section*/
-
 
 /*testimonial section*/
 
 #testimony {
-    background-color: #FAFCFF;
+  background-color: #fafcff;
 }
 
 .testimonial img {
-    width: 8%;
-    margin-left: 1.3rem;
+  width: 8%;
+  margin-left: 1.3rem;
 }
 
 #emma {
-    width: 12%;
-    border: 5px solid #0067CC;
+  width: 12%;
+  border: 5px solid #0067cc;
 }
-
 
 /* Patients and Medical assistance section*/
 
 #about_patients_assistance .patients {
-    margin: 100px auto 0;
+  margin: 100px auto 0;
 }
 
 #about_patients_assistance .assistance {
-    background-image: radial-gradient(#081A2B, rgba(8, 26, 43, 75%)), url("../img/doc-assist.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    border-radius: 25px;
-    color: #fff;
-    height: 70vh;
-    width: 80vw;
-    margin: 100px auto 0;
+  background-image: radial-gradient(#081a2b, rgba(8, 26, 43, 75%)),
+    url("../img/doc-assist.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-radius: 25px;
+  color: #fff;
+  height: 70vh;
+  width: 80vw;
+  margin: 100px auto 0;
 }
 
 .assistance h2 {
-    margin-top: 80px;
-    font-size: 30px;
+  margin-top: 80px;
+  font-size: 30px;
 }
 
 .assistance p {
-    margin: 5px;
-    width: 100%;
+  margin: 5px;
+  width: 100%;
 }
 
 .assistance h6 {
-    width: 50%;
-    margin-top: 35px;
+  width: 50%;
+  margin-top: 35px;
 }
 
 .medical_assistance .ass-btn {
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
-    font-weight: 600;
-    margin-left: 15px !important;
-    margin-top: 8px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  font-weight: 600;
+  margin-left: 15px !important;
+  margin-top: 8px;
 }
 
 .medical_assistance .hero-ring {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .medical_assistance .hero-text {
-    text-align: left;
-    padding-left: 40px;
+  text-align: left;
+  padding-left: 40px;
 }
-
-
 
 /* Box section */
 
 .box {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 6rem;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 6rem;
 }
 .box-content {
   display: flex;
   justify-content: space-between;
 }
-.first-box, .second-box, .third-box, .fourth-box {
+.first-box,
+.second-box,
+.third-box,
+.fourth-box {
   height: 140px;
   border-radius: 12px;
   margin: 10px;
   padding: 10px 100px;
 }
 .first-box {
-  background-color: #081A2B;
+  background-color: #081a2b;
 }
 .second-box {
-  background-color: #0074E5;
+  background-color: #0074e5;
 }
 .third-box {
-  background-color: #1DCDFE;
+  background-color: #1dcdfe;
 }
 .fourth-box {
-  background-color: #1B5A98;
+  background-color: #1b5a98;
 }
 
 /*Biography*/
@@ -231,23 +251,25 @@ ul {
 
 /*Sponsor*/
 
-.text-field{
-  display:flex;
-  flex-direction:row;
-   align-items: center;
+.text-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.text{
-  flex-grow:0;
+.text {
+  flex-grow: 0;
 }
-.text-line{
-  flex-grow:1;
+.text-line {
+  flex-grow: 1;
   height: 1px;
   background-color: #9f9f9f;
 }
 .move-left {
   float: left;
 }
-input[type="text"], input[type="submit"], .textarea{
+input[type="text"],
+input[type="submit"],
+.textarea {
   border-radius: 12px;
 }
 input[type="submit"] {
@@ -255,151 +277,148 @@ input[type="submit"] {
 }
 
 img .brand-images {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .partner-brands {
-    margin-left: 6%;
+  margin-left: 6%;
 }
 
 #partnerss,
 #partner,
 #partners {
-    width: 12.5%;
-    height: 13%;
-    padding: 15px 0 0 0;
+  width: 12.5%;
+  height: 13%;
+  padding: 15px 0 0 0;
 }
 
 #partner {
-    margin-left: 6%;
-    margin-right: 6%;
+  margin-left: 6%;
+  margin-right: 6%;
 }
 
 /* NEWSLETTER section*/
 
 #newsletter {
-    background-color: #DEEDF0;
-    height: auto;
-    margin: auto;
-    margin-top: 40px;
-    text-align: left;
+  background-color: #deedf0;
+  height: auto;
+  margin: auto;
+  margin-top: 40px;
+  text-align: left;
 }
 
 #newsletter .container {
-    padding: 4rem;
+  padding: 4rem;
 }
 
 .sub .sub_text {
-    padding: 6% 10% 10% 10%;
+  padding: 6% 10% 10% 10%;
 }
 
 .sub .sub_text h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .form_box p {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .form_box input {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form_box .btn {
-    margin-top: 5px;
-    background-color: #0275d8;
-    color: #ffff;
+  margin-top: 5px;
+  background-color: #0275d8;
+  color: #ffff;
 }
-
 
 /* partners section*/
 
 .ass_spons {
-    background-color: #DEEDF0;
-    color: #005AB2;
-    padding-top: 1rem;
+  background-color: #deedf0;
+  color: #005ab2;
+  padding-top: 1rem;
 }
 
 .ass_spons a {
-    color: #005AB2;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    padding-right: 30px;
+  color: #005ab2;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding-right: 30px;
 }
 
 /* footer section*/
 
 footer {
-    background-color: #081A2B;
-    color: hsl(0, 0%, 100%);
+  background-color: #081a2b;
+  color: hsl(0, 0%, 100%);
 }
 
 footer a,
-ul {
-    text-decoration: none;
-    list-style-type: none;
-    color: hsl(0, 0%, 100%);
-    text-align: left;
-    padding-left: 2em;
+footer ul {
+  text-decoration: none;
+  list-style-type: none;
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+  padding-left: 2em;
 }
 
 footer h2 {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 footer h3 {
-    font-size: 23px;
-    /* color: #FF143D; */
+  font-size: 23px;
+  /* color: #FF143D; */
 }
 
 .footer-small {
-    background-color: #050F1A;
-    height: 10vh;
+  background-color: #050f1a;
+  height: 10vh;
 }
 
 .footer-small p {
-    font-size: 20px;
-    padding-top: 12px;
-    text-align: center;
+  font-size: 20px;
+  padding-top: 12px;
+  text-align: center;
 }
 
 .footer-small span {
-    color: #FF143D;
+  color: #ff143d;
 }
 
-
-
 /* Responsiveness */
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   /* hero section*/
   #about_patients_assistance .patients {
-      margin: 50px auto 0;
+    margin: 50px auto 0;
   }
 
   #about_patients_assistance .assistance {
-      height: 70vh;
-      width: 80vw;
-      margin: 60px auto 0;
+    height: 70vh;
+    width: 80vw;
+    margin: 60px auto 0;
   }
 
   .assistance h2 {
-      margin-top: 60px;
-      font-size: 20px;
+    margin-top: 60px;
+    font-size: 20px;
   }
 
   .assistance p {
-      margin: 5px;
-      width: 100%;
-      font-size: 11px;
+    margin: 5px;
+    width: 100%;
+    font-size: 11px;
   }
 
   .assistance h6 {
-      width: 100%;
-      margin-top: 15px;
+    width: 100%;
+    margin-top: 15px;
   }
 
   /*.medical_assistance .ass-btn {
@@ -411,12 +430,12 @@ footer h3 {
   }
 */
   .medical_assistance .hero-ring {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 
   .medical_assistance .hero-text {
-      text-align: left;
-      padding-left: 20px;
+    text-align: left;
+    padding-left: 20px;
   }
   /*Box Content*/
   .horizontal-scrollable {
@@ -431,5 +450,4 @@ footer h3 {
     display: inline-block;
     float: none;
   }
-
 }

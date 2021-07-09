@@ -1,390 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Link to Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/sponsor.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>Sponsorship</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
-</head>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google font -->
 
-<body>
-    <header class="mb-5">
-        <section class="bar_title" id="hero-image">
-            <div class="container">
-                <!-- NavBar -->
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo">
-                            <Strong>Medic<span class="span">Aid</span></Strong>
-                        </a>
-                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<!-- <span class="navbar-toggler-icon"></span> -->
-                        <!-- <i class="fas fa-bars"></i> -->
-                        <span class="iconify" data-icon="gg:menu-right-alt" data-inline="false"></span>
-					  </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="sponsor.html">Sponsorship</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="medical_issue.html">Medical</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                            <a class="nav-link" href="#"><span
-							class="navbar-text">
-								Seek Medical Assistance </span></a>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/sponsor.css" />
 
-                            <a href="medical_issue.html"> <button type="button" class="btn btn-primary">Sponsor A Patient</button>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
+    <title>Sponsorship | MedicAid</title>
+  </head>
 
-                <!-- Title -->
-
-                <div class="title">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <h1 class="title-text">Let’s <span class="span">Help</span> Sponsor</h1>
-                        <p>From your desktop, click People & user groups at the top of your left sidebar.... <br> Click New User Group in the top right From your desktop, click People & user groups at the top of your left sidebar. </p>
-
-                    </div>
-                </div>
-            </div>
-        </section>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <!-- NavBar -->
+        <nav>
+          <a class="nav__brand d-flex align-items-center" href="#"
+            ><img class="col-2" src="assets/img/logo.png" alt="MedicAid logo" />
+            <span class="fw-bold"
+              >Medic<span class="medic-aid-blue">Aid</span></span
+            >
+          </a>
+          <i class="fas fa-bars fs-6 d-md-none" id="menu-toggle"></i>
+          <div class="d-md-flex align-items-center" id="nav-dropdown">
+            <ul class="nav-links d-md-flex me-md-auto">
+              <li>
+                <a class="nav-links__link active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="nav-links__link" href="about.html">About</a>
+              </li>
+              <li>
+                <a class="nav-links__link" href="sponsor.html">Sponsorship</a>
+              </li>
+              <li>
+                <a class="nav-links__link" href="medical_issue.html">Medical</a>
+              </li>
+              <li>
+                <a class="nav-links__link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <a class="" href="sponsor_patient.html">Seek Medical Assistance</a>
+            <a href="sign-up.html">
+              <button type="button" class="btn btn-primary">
+                Sponsor A Patient
+              </button>
+            </a>
+          </div>
+        </nav>
+        <!-- Hero section -->
+        <div class="hero col-md-5">
+          <h1 class="hero__title col-md-9 fw-bold mb-2">
+            Let’s <span class="medic-aid-blue">Help</span> Sponsor
+          </h1>
+          <p class="hero__subtitle mb-3">
+            From your desktop, click People & user groups at the top of your
+            left sidebar... Click New User Group in the top right From your
+            desktop, click People & user groups at the top of your left sidebar.
+          </p>
+        </div>
+        <!--End of Hero section -->
+      </div>
     </header>
 
     <!-- Help_sponsor Section -->
     <section class="m-auto" id="Help_sponsor">
-        <div class="container">
-            <div class="row">
-                <div class="help col-lg-6 col-md-12 col-sm-12 m-sm-auto m-lg-0">
-                    <div class="m-sm-auto">
-                        <h2 class="m-sm-auto mt-2 pb-2">How to sponsor.</h2>
-                        <p class="core_p pb-2">Have a heart of Gold?. Ready to take on expenses of <br>medically restrained patients? Here’s how to take a step<br> in making humanity smile.</p>
-                    </div>
-
-                    <div class="row">
-                        <div class="values col-lg-5 col-md-12 pb-0 pl-5">
-                            <h4>Step 1</h4>
-                            <p>Head over<br> to www.medicaid.com/medical_issues</p>
-                        </div>
-                        <div class="values col-lg-5 col-md-12">
-                            <h4>Step 2</h4>
-                            <p>Selet from the cases listed on the page <br> on the website.</p>
-                        </div>
-                        <div class="values col-lg-5 col-md-12">
-                            <h4>Step 3</h4>
-                            <p>With your help, we could help make humanity smile again.</p>
-                        </div>
-                        <div class="values col-lg-5 col-md-12">
-                            <h4>Step 4</h4>
-                            <p>Fill in the neccesary details.. and make<br> sponsorship.. Thanks for you Kind <br>Gesture towards humanity!.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 Help_sponsor">
-                    <img class="img-fluid patient-image mt-5" src="assets/img/medical.png" class="img-responsive" alt="patient's image">
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="help col-lg-6 col-md-12 col-sm-12 m-sm-auto m-lg-0">
+            <div class="m-sm-auto">
+              <h2 class="m-sm-auto mt-2 pb-2">How to sponsor.</h2>
+              <p class="core_p pb-2">
+                Have a heart of Gold?. Ready to take on expenses of
+                <br />medically restrained patients? Here’s how to take a
+                step<br />
+                in making humanity smile.
+              </p>
             </div>
+
+            <div class="row">
+              <div class="values col-lg-5 col-md-12 pb-0 pl-5">
+                <h4>Step 1</h4>
+                <p>
+                  Head over<br />
+                  to www.medicaid.com/medical_issues
+                </p>
+              </div>
+              <div class="values col-lg-5 col-md-12">
+                <h4>Step 2</h4>
+                <p>
+                  Select from the cases listed on the page <br />
+                  on the website.
+                </p>
+              </div>
+              <div class="values col-lg-5 col-md-12">
+                <h4>Step 3</h4>
+                <p>With your help, we could help make humanity smile again.</p>
+              </div>
+              <div class="values col-lg-5 col-md-12">
+                <h4>Step 4</h4>
+                <p>
+                  Fill in the necessary details.. and make<br />
+                  sponsorship.. Thanks for you Kind <br />Gesture towards
+                  humanity!.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 Help_sponsor">
+            <img
+              class="img-fluid patient-image mt-5"
+              src="assets/img/medical.png"
+              class="img-responsive"
+              alt="patient's image"
+            />
+          </div>
         </div>
+      </div>
     </section>
     <!-- Patients and Medical assistance section -->
 
     <section class="patients_assistance" id="about_patients_assistance">
-        <div class="row">
-            <!-- Seek Medical Assistance Sub-section -->
-            <div class="make-col assistance">
-                <h2 class="">Seek <span class="span">Medical</span> Assistance</h2>
-                <p>Have medical issues that are beyond your financial control to fund? <br> Don’t feel bad. We could help source for sponsors to help with your <br> medical expenses and get you back to good health.</p>
+      <div class="row">
+        <!-- Seek Medical Assistance Sub-section -->
+        <div class="make-col assistance">
+          <h2 class="">
+            Seek <span class="medic-aid-blue">Medical</span> Assistance
+          </h2>
+          <p>
+            Have medical issues that are beyond your financial control to fund?
+            <br />
+            Don’t feel bad. We could help source for sponsors to help with your
+            <br />
+            medical expenses and get you back to good health.
+          </p>
 
-                <a href="medical_issue.html"> <button type="button" class="ass-btn btn-lg">Let's Help You</button>
-                </a>
-            </div>
+          <a href="medical_issue.html">
+            <button type="button" class="ass-btn btn-lg">Let's Help You</button>
+          </a>
         </div>
+      </div>
     </section>
-
 
     <!-- Testimonial section -->
     <section class="testimonial pb-5 mb-3" id="testimony">
-        <div class="container">
-            <div class="col-lg-12 col-md-12 col-m-12 patients">
-                <h3 class="pb-2 font-weight-900">Testimonies from <span class="span">happy patients</span></h3>
-                <div class="testifiers">
-                    <p>MedicAid helped secure sponsorship for my medical expenses when i had <br> asthma. My inhaler and other medical care were to cost $40,000 which i <br> couldn’t afford basically. I am very grateful to Medic Aid.<br> Thank you anonymous!.
-                        Thank you MedicAid!.
-                    </p>
-                    <h3><span class="span">Adeeko Emmanuel</span></h3>
-                    <h6 class="pb-3">Patient @Zuri Hospital</h6>
-                </div>
-                <div class="col-sm-12 col-12 col-md-12 images">
-                    <img src="assets/img/matina.png" alt="martina" class="img-responsive rounded-circle">
-                    <img src="assets/img/otoki.jpg" class="img-responsive rounded-circle" alt="otoki">
-                    <img src="assets/img/guy.png" class="img-responsive rounded-circle" id="emma" alt="emma ">
-                    <img src="assets/img/luu.png " class="img-responsive rounded-circle " alt="luu ">
-                    <img src="assets/img/tyler.jpg " class="img-responsive rounded-circle " alt="tyler ">
-                </div>
-            </div>
+      <div class="container">
+        <div class="col-lg-12 col-md-12 col-m-12 patients">
+          <h3 class="pb-2 font-weight-900">
+            Testimonies from <span class="medic-aid-blue">happy patients</span>
+          </h3>
+          <div class="testifiers">
+            <p>
+              MedicAid helped secure sponsorship for my medical expenses when i
+              had <br />
+              asthma. My inhaler and other medical care were to cost $40,000
+              which i <br />
+              couldn’t afford basically. I am very grateful to Medic Aid.<br />
+              Thank you anonymous!. Thank you MedicAid!.
+            </p>
+            <h3><span class="medic-aid-blue">Adeeko Emmanuel</span></h3>
+            <h6 class="pb-3">Patient @Zuri Hospital</h6>
+          </div>
+          <div class="col-sm-12 col-12 col-md-12 images">
+            <img
+              src="assets/img/matina.png"
+              alt="martina"
+              class="img-responsive rounded-circle"
+            />
+            <img
+              src="assets/img/otoki.jpg"
+              class="img-responsive rounded-circle"
+              alt="otoki"
+            />
+            <img
+              src="assets/img/guy.png"
+              class="img-responsive rounded-circle"
+              id="emma"
+              alt="emma "
+            />
+            <img
+              src="assets/img/luu.png "
+              class="img-responsive rounded-circle"
+              alt="luu "
+            />
+            <img
+              src="assets/img/tyler.jpg "
+              class="img-responsive rounded-circle"
+              alt="tyler "
+            />
+          </div>
         </div>
-
+      </div>
     </section>
     <!-- FAQs Section -->
 
     <section class="faq mb-4" id="fa_questions">
-        <div class="jumbotron ">
-            <div class="row asked_q ">
-                <h3 class="text-center mt-4">Frequently Asked Questions</h3>
-                <div class="faq_head m-auto ">
-                    <p>The Platform</p>
-                    <p class-="faq-sponsorship">Sponsorship</p>
-                    <p>Medical Assistance</p>
-                </div>
-                <div class="QA ">
-                    <div class="row questions_and_answers text-left ">
-                        <div class="what col-lg-6 col-md-12 col-sm-12 ">
-                            <h4>How can i get Medical Assistance?</h4>
-                            <p>You can get medical assistance by Clicking Medical <br> Assistance Here. Which would need you to register on <br> the platform</p>
-                        </div>
-                        <div class="what col-lg-6 col-md-12 col-sm-12 ">
-                            <h4>Do i get to pay for the medical Assistance?</h4>
-                            <p>No. You dont get to pay for medical assistance. We help<br> source for sponsors that could help with your medical <br>Expenses.</p>
-                        </div>
-                    </div>
-                    <div class="row questions_and_answers ">
-                        <div class="what col-lg-6 col-md-12 col-sm-12 ">
-                            <h4>What really happens if i’m not paying?</h4>
-                            <p>Sponsors from far and wide volounteer to help with the <br>payment of your medical expense at 0 cost or returns<br> from you.</p>
-                        </div>
-                        <div class="what col-lg-6 col-md-12 col-sm-12 ">
-                            <h4>How can i say thank you?</h4>
-                            <p>You could write a mail for us to deliver to them <br>@hello@medicaid.com</p>
-                        </div>
-                    </div>
-
-                </div>
+      <div class="jumbotron">
+        <div class="row asked_q">
+          <h3 class="text-center mt-4">Frequently Asked Questions</h3>
+          <div class="faq_head m-auto">
+            <p>The Platform</p>
+            <p class-="faq-sponsorship">Sponsorship</p>
+            <p>Medical Assistance</p>
+          </div>
+          <div class="QA">
+            <div class="row questions_and_answers text-left">
+              <div class="what col-lg-6 col-md-12 col-sm-12">
+                <h4>How can i get Medical Assistance?</h4>
+                <p>
+                  You can get medical assistance by Clicking Medical <br />
+                  Assistance Here. Which would need you to register on <br />
+                  the platform
+                </p>
+              </div>
+              <div class="what col-lg-6 col-md-12 col-sm-12">
+                <h4>Do i get to pay for the medical Assistance?</h4>
+                <p>
+                  No. You do not get to pay for medical assistance. We help<br />
+                  source for sponsors that could help with your medical
+                  <br />Expenses.
+                </p>
+              </div>
             </div>
+            <div class="row questions_and_answers">
+              <div class="what col-lg-6 col-md-12 col-sm-12">
+                <h4>What really happens if i’m not paying?</h4>
+                <p>
+                  Sponsors from far and wide volunteer to help with the
+                  <br />payment of your medical expense at 0 cost or returns<br />
+                  from you.
+                </p>
+              </div>
+              <div class="what col-lg-6 col-md-12 col-sm-12">
+                <h4>How can i say thank you?</h4>
+                <p>
+                  You could write a mail for us to deliver to them
+                  <br />@hello@medicaid.com
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <section id="fa-img">
-            <div class="row">
-                <!-- Seek Medical Assistance Sub-section -->
-                <div class="make-col fa-assistance text-center">
-                    <h2>Seek <span class="span">Medical</span> Assistance</h2>
-                    <p>Have medical issues that are beyond your financial control to fund? <br> Don’t feel bad. We could help source for sponsors to help with your <br> medical expenses and get you back to good health.</p>
+      </div>
+      <section id="fa-img">
+        <div class="row">
+          <!-- Seek Medical Assistance Sub-section -->
+          <div class="make-col fa-assistance text-center">
+            <h2>Seek <span class="medic-aid-blue">Medical</span> Assistance</h2>
+            <p>
+              Have medical issues that are beyond your financial control to
+              fund? <br />
+              Don’t feel bad. We could help source for sponsors to help with
+              your <br />
+              medical expenses and get you back to good health.
+            </p>
 
-                    <a href="medical_issue.html">
-                        <button type="button" class="ass-btn btn-lg">Let's Help You</button>
-                    </a>
-                </div>
-            </div>
-        </section>
+            <a href="medical_issue.html">
+              <button type="button" class="ass-btn btn-lg">
+                Let's Help You
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- Get In Touch Section -->
 
     <section class="git" id="git_touch ">
-        <div class="container mt-5 mb-5 ">
-            <div class="row ">
-                <div class="col-sm-12 col-md-6 col-lg-6 git_details ">
-                    <h3 class="git-header ">Get in <span class="span ">Touch</span></h3>
-                    <p>Need more information about the <br> platform?</p>
-                    <i class="fas fa-envelope "><span class="env-text ">hello@appname.com</span></i> <br>
-                    <i class="fas fa-envelope "><span class="env-text ">+164 - 1593 - 3292</span></i>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 git_details">
+            <h3 class="git-header">
+              Get in <span class="medic-aid-blue">Touch</span>
+            </h3>
+            <p>
+              Need more information about the <br />
+              platform?
+            </p>
+            <i class="fas fa-envelope"
+              ><span class="env-text">hello@appname.com</span></i
+            >
+            <br />
+            <i class="fas fa-envelope"
+              ><span class="env-text">+164 - 1593 - 3292</span></i
+            >
+          </div>
+          <div class="col-lg-6 form_box">
+            <form>
+              <div class="form-row">
+                <div class="col">
+                  <p>Full name</p>
+                  <input
+                    type="text "
+                    class="form-control"
+                    placeholder="Enter full name e.g. John Doe "
+                  />
                 </div>
-                <div class="col-lg-6 form_box ">
-                    <form>
-                        <div class="form-row ">
-                            <div class="col ">
-                                <p>Full name</p>
-                                <input type="text " class="form-control " placeholder="Enter full name e.g. John Doe ">
-                            </div>
-                            <div class="form-row ">
-                                <div class="col ">
-                                    <p>Email address</p>
-                                    <input type="email " class="form-control " placeholder="Enter Email Address ">
-                                </div>
-                                <div class="form-group ">
-                                    <label for="exampleFormControlTextarea1 ">Message</label>
-                                    <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 " placeholder="Write your message "></textarea>
-                                </div>
-                                <button class="btn btn-primary mt-3 " type="submit ">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="form-row">
+                  <div class="col">
+                    <p>Email address</p>
+                    <input
+                      type="email "
+                      class="form-control"
+                      placeholder="Enter Email Address "
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1 ">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1 "
+                      rows="3 "
+                      placeholder="Write your message "
+                    ></textarea>
+                  </div>
+                  <button class="btn btn-primary mt-3" type="submit ">
+                    Send Message
+                  </button>
                 </div>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- patners Section -->
+    <!-- partners Section -->
     <section id="brands">
-        <div class="container-fluid partner-brands pb-2">
-            <div class="row brand-images">
-                <img src="assets/img/oc.png" alt="police-logo" class="img-fluid " id="partnerss">
-                <img src="assets/img/health-center-patners.png" alt="Zuri team" class="img-fluid mt-2" id="partner">
-                <img src="assets/img/health-pstners-plans.png" alt="slack" class="img-fluid mt-4" id="partners">
-                <img src="assets/img/Allways.png" alt="Zuri team" class="img-fluid mt-2" id="partner">
-                <img src="assets/img/healthwise.png" alt="slack" class="img-fluid mt-2" id="partners">
-                <img src="assets/img/oc.png" alt="police-logo" class="img-fluid " id="partnerss">
-            </div>
+      <div class="container-fluid partner-brands pb-2">
+        <div class="row brand-images">
+          <img
+            src="assets/img/oc.png"
+            alt="police-logo"
+            class="img-fluid"
+            id="partnerss"
+          />
+          <img
+            src="assets/img/health-center-patners.png"
+            alt="Zuri team"
+            class="img-fluid mt-2"
+            id="partner"
+          />
+          <img
+            src="assets/img/health-pstners-plans.png"
+            alt="slack"
+            class="img-fluid mt-4"
+            id="partners"
+          />
+          <img
+            src="assets/img/Allways.png"
+            alt="Zuri team"
+            class="img-fluid mt-2"
+            id="partner"
+          />
+          <img
+            src="assets/img/healthwise.png"
+            alt="slack"
+            class="img-fluid mt-2"
+            id="partners"
+          />
+          <img
+            src="assets/img/oc.png"
+            alt="police-logo"
+            class="img-fluid"
+            id="partnerss"
+          />
         </div>
+      </div>
     </section>
     <!-- newsletter Section -->
-    <section class="subscribe mb-auto " id="newsletter">
-        <div class="container ">
-            <div class="row sub ">
-
-                <div class="col-lg-6 sub_text ">
-                    <h3>Subscribe <span class="aid ">to our <span class="span ">Newsletter</span></span>
-                    </h3>
-                    <p>Subscribe to our newsletter to get updates about the platform</p>
+    <section class="subscribe mb-auto" id="newsletter">
+      <div class="container">
+        <div class="row sub">
+          <div class="col-lg-6 sub_text">
+            <h3>
+              Subscribe
+              <span class="aid"
+                >to our <span class="medic-aid-blue">Newsletter</span></span
+              >
+            </h3>
+            <p>Subscribe to our newsletter to get updates about the platform</p>
+          </div>
+          <div class="col-lg-6 form_box">
+            <form>
+              <div class="form-row">
+                <div class="col">
+                  <p>Firstname</p>
+                  <input
+                    type="text "
+                    class="form-control"
+                    placeholder="Enter fullname "
+                  />
                 </div>
-                <div class="col-lg-6 form_box">
-                    <form>
-                        <div class="form-row">
-                            <div class="col ">
-                                <p>Firstname</p>
-                                <input type="text " class="form-control " placeholder="Enter fullname ">
-                            </div>
-                            <div class="form-group ">
-                                <label for="exampleFormControlInput1 ">Email Address</label>
-                                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="Enter Email Address ">
-                            </div>
-                            <button class="btn btn-primary " type="button ">Subscribe!</button>
-                        </div>
-                    </form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1 ">Email Address</label>
+                  <input
+                    type="email "
+                    class="form-control"
+                    id="exampleFormControlInput1 "
+                    placeholder="Enter Email Address "
+                  />
                 </div>
-            </div>
+                <button class="btn btn-primary" type="button ">
+                  Subscribe!
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- Seek Medical Assistance + Sponsor a patient Section -->
 
-    <section class="ass_spons pb-3 " id="ass_patient ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-sm-12 col-md-12 col-lg-6 ">
-
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 med_help ">
-                    <a class=" " href="# ">Ask for medical help</a>
-                    <button class="btn btn-primary " type="button ">Sponsor A Patient</button>
-                    <a href="medical_issue.html">
-                        <button class="btn btn-primary " type="button ">Sponsor A Patient</button>
-                    </a>
-                </div>
-            </div>
+    <section class="ass_spons pb-3" id="ass_patient ">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6"></div>
+          <div class="col-sm-6 col-md-6 col-lg-6 med_help">
+            <a class="" href="# ">Ask for medical help</a>
+            <button class="btn btn-primary" type="button ">
+              Sponsor A Patient
+            </button>
+            <a href="medical_issue.html">
+              <button class="btn btn-primary" type="button ">
+                Sponsor A Patient
+              </button>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
-
-
 
     <!-- footer section -->
 
-    <footer class="pt-5 " id="footerbg ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-auto ">
-                    <a class="navbar-brand " href="# "><img src="assets/img/logo1.png " class="img-fluid " alt="logo ">
-                        <h2 class=" ">Medi<span class="span ">Aid</span></h2>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 ">
-                    <h3 class="col-sm-12 col-md-6 col-lg-34 "> Quick Links</h3>
-                    <ul class="col-sm-12 col-md-6 col-lg-3 pt-2 ">
-                        <li>
-                            <a href=" ">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html ">About</a>
-                        </li>
-                        <li>
-                            <a href="sponsor.html">Sponsorship</a>
-                        </li>
-                        <li>
-                            <a href="medical_issue.html">Medical </a>
-                        </li>
-                        <li>
-                            <a href=" ">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 ">
-                    <h3 class="col-sm-12 col-md-6 col-lg-34 "> Quick Links</h3>
-                    <ul class="col-sm-12 col-md-6 col-lg-3 pt-2 ">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="sponsor.html">Sponsorship</a>
-                        </li>
-                        <li>
-                            <a href="medical_issue.html">Medical</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 ">
-                    <h3 class="col-sm-12 col-md-6 col-lg-34 ">Social Links</h3>
-                    <ul class="col-sm-12 col-md-6 col-lg-3 pt-2 ">
-                        <li>
-                            <a href=" ">Twitter</a>
-                        </li>
-                        <li>
-                            <a href=" ">Facebook</a>
-                        </li>
-                        <li>
-                            <a href=" ">Intergram</a>
-                        </li>
-                        <li>
-                            <a href=" ">Linkedin</a>
-                        </li>
-                        <li>
-                            <a href=" ">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <footer class="pt-5" id="footerbg ">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-auto">
+            <a class="navbar-brand" href="# "
+              ><img src="assets/img/logo1.png " class="img-fluid" alt="logo " />
+              <h2 class="">Medic<span class="medic-aid-blue">Aid</span></h2>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <h3 class="col-sm-12 col-md-6 col-lg-34">Quick Links</h3>
+            <ul class="col-sm-12 col-md-6 col-lg-3 pt-2">
+              <li>
+                <a href=" ">Home</a>
+              </li>
+              <li>
+                <a href="about.html ">About</a>
+              </li>
+              <li>
+                <a href="sponsor.html">Sponsorship</a>
+              </li>
+              <li>
+                <a href="medical_issue.html">Medical </a>
+              </li>
+              <li>
+                <a href=" ">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <h3 class="col-sm-12 col-md-6 col-lg-34">Quick Links</h3>
+            <ul class="col-sm-12 col-md-6 col-lg-3 pt-2">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="sponsor.html">Sponsorship</a>
+              </li>
+              <li>
+                <a href="medical_issue.html">Medical</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <h3 class="col-sm-12 col-md-6 col-lg-34">Social Links</h3>
+            <ul class="col-sm-12 col-md-6 col-lg-3 pt-2">
+              <li>
+                <a href=" ">Twitter</a>
+              </li>
+              <li>
+                <a href=" ">Facebook</a>
+              </li>
+              <li>
+                <a href=" ">Instagram</a>
+              </li>
+              <li>
+                <a href=" ">LinkedIn</a>
+              </li>
+              <li>
+                <a href=" ">Blog</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-small ">
-            <p>Copyright &copy; 2021 || <span>PJT-50</span></p>
-        </div>
+      </div>
+      <div class="footer-small">
+        <p>Copyright &copy; 2021 || <span>PJT-50</span></p>
+      </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
-    <script src="index.js "></script>
-</body>
-
-</html>
-
-</html>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 "
+      crossorigin="anonymous "
+    ></script>
+    <script src="assets/js/menu-toggle.js"></script>
+  </body>
 </html>
